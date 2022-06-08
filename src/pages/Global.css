@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/* ---------------------     START OF GLOBAL RESET     ---------------------  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: var(--background);
+}
+
+:root {
+    --background: #FBFBFB;
+    --black: #000000;
+    --dark-gray: #4A4A4A;
+    --blue: #7370f0;
+    --secondary-blue: #413DF7;
+    --pink: #CB46D3;
+    --light-blue: rgba(82, 78, 221, 60%);
+    --box-shadow: rgba(74, 74, 74, 35%);
+    --box-shadow-alt: rgba(74, 74, 74, 0.20);
+}
+/* ---------------------     END OF GLOBAL RESET     ---------------------  */
+
+/* ---------------------     START OF TYPOGRAPHY     ---------------------  */
+.h1 {
+    font-family: Plus Jakarta Sans;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+@media (min-width: 500px) {
+
+}
+
+@media (min-width: 800px) {
+    .h1 {
+        font-family: Plus Jakarta Sans;
+        font-size: 60px;
+        line-height: 65px;
+    }
+}
+
+.h2 {
+    font-family: Plus Jakarta Sans;
+    font-size: 39px;
+    line-height: 47px;
+}
+
+.h3 {
+    font-family: Plus Jakarta Sans;
+    font-size: 31px;
+    line-height: 37px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.h3-0mg {
+    font-family: Plus Jakarta Sans;
+    font-size: 31px;
+    line-height: 37px;
+    margin-left: 0px;
+}
+
+.h4 {
+    font-family: Plus Jakarta Sans;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.h4-0mg {
+    font-family: Plus Jakarta Sans;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 0px;
+}
+
+.h5 {
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+.h5-0mg {
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.body {
+    font-family: Noto Sans;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.label {
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.boldless {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .label {
+        font-size: 14px;
+    }
+
+    .h3 {
+        font-size: 35px;
+        line-height: 47px;
+    }
+}
+/* ---------------------     END OF TYPOGRAPHY     ---------------------  */
+
+/* ---------------------     START OF COLOURS     ---------------------  */
+.background{
+    color: #FBFBFB;
+}
+
+.black {
+    color: #000000;
+}
+
+.secondary-black {
+    color: #343A40;
+}
+
+.dark-gray {
+    color: #4A4A4A;
+}
+
+.blue {
+    color: #7370f0;
+}
+
+.secondary-blue {
+    color: #413DF7;
+}
+
+.light-blue {
+    color: rgba(82, 78, 221, 60);
+}
+
+.pink {
+    color: #CB46D3;
+}
+
+.secondary-pink {
+    color: #dd33e6;
+}
+
+.warning {
+    color: #f44336;
+}
+/* ---------------------     END OF COLOURS     ---------------------  */
+
+/* ---------------------     START OF BUTTONS     ---------------------  */
+.primary-button {
+    width: 150px;
+    padding: 10px 0;
+    background-color: var(--pink);
+    color: white;
+    border: 2px solid var(--pink);
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow);
+}
+
+.primary-button:hover {
+    background-color: #FFFFFF;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.secondary-button {
+    width: 150px;
+    padding: 10px 0;
+    background-color: var(--secondary-blue);
+    color: white;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow);
+}
+
+.secondary-button:hover {
+    background-color: #FFFFFF;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.button-container {
+    width: 360px;
+    margin: 50px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+/* ---------------------     END OF BUTTONS     ---------------------  */
+
+/* ---------------------     START OF IMAGES     ---------------------  */
+.question-mark-primary {
+    height: 20px;
+    width: 20px;
+}
+
+.question-mark-primary__alt {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+}
+/* ---------------------     END OF IMAGES     ---------------------  */
+
+/* ---------------------     START OF CONTENT CONTROLL    ---------------------  */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.container-sm {
+    width: 360px;
+    margin: 0px auto 0 auto;
+}
+
+.container-md {
+    width: 360px;
+    margin: 0px auto 0 auto;
+}
+
+.container-lg {
+    width: 360px;
+    margin: 75px auto 0 auto;
+}
+
+.container-entry {
+    width: 360px;
+    margin: 75px auto 0 auto;
+}
+
+@media (min-width: 500px) {
+    .container-md {
+        width: 500px;
+    }
+
+    .container-lg {
+        width: 500px;
+    }
+
+    .container-entry {
+        width: 500px;
+    }
+}
+
+@media (min-width: 800px) {
+    .container-md {
+        width: 500px;
+        margin: 30px 0 0 20px;
+    }
+   
+    .container-lg {
+        width: 800px;
+    }
+
+    .container-entry {
+        width: 100%;
+    }
+}
+
+
+/* ---------------------     END OF CONTENT CONTROLL    ---------------------  */
+
+/* ---------------------     START OF TABLE DESIGN CONTROLS    ---------------------  */
+.table-sm {
+    width: 320px;
+    border-spacing: 10px;
+    border: none;
+}
+
+.table-row {
+    margin-bottom: 10px;
+}
+
+.select-sm {
+    width: 130px;
+    padding: 10px 15px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--light-blue);
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow-alt);
+}
+
+.select-sm:focus {
+    outline: 1px solid var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.select-lg {
+    width: 320px;
+    height: 55px;
+    padding: 10px 15px;
+    outline: none;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 2px solid var(--light-blue);
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow-alt);
+    text-overflow: ellipsis;
+    white-space:pre-wrap;
+}
+
+.select-lg:focus, select-max:focus {
+    border-bottom: 2px solid var(--pink);
+}
+
+.select-max {
+    width: 320px;
+    height: 73px;
+    padding: 10px 15px;
+    outline: none;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 2px solid var(--light-blue);
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow-alt);
+    text-overflow: ellipsis;
+    white-space:pre-wrap;
+}
+
+.input-sm {
+    width: 80px;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid var(--light-blue);
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow-alt);
+}
+
+
+.input-lg {
+    min-width: 300px;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid var(--light-blue);
+    border-radius: 2px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow-alt);
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (min-width: 500px) {
+    .select-lg {
+        width: 440px;
+        height: 55px;
+    }
+
+    .select-max {
+        width: 440px;
+        height: 60px;
+    }
+
+    .input-lg {
+        width: 440px;
+    }
+}
+
+@media (min-width: 800px) {
+    .select-lg {
+        width: 700px;
+        height: auto;
+    }
+
+    .select-max {
+        width: 700px;
+    }
+
+}
+/* ---------------------     END OF TABLE DESIGN CONTROLS    ---------------------  */

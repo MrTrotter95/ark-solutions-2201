@@ -1,0 +1,25 @@
+.input-label {
+    margin-bottom: 7px;
+}
+
+.client-input__top {
+    margin-bottom: 30px;
+}
+
+.client-info__container {
+    width: 360px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .client-info__container {
+        width: 500px;
+        margin: 10px 0 75px 0px;
+    }
+
+    .client-input__top {
+        margin-bottom: 30px;
+
+    }
+
+}

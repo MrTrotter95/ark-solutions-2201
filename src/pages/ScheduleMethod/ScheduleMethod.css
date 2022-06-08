@@ -1,0 +1,42 @@
+.container__risk-matrix {
+    width: 360px;
+    margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+    .container__risk-matrix {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .container__risk-matrix {
+        width: 800px;
+        margin: 0 0 0 20px;
+    }
+}
+
+.input-sm__window {
+    width: 65px;
+    padding: 10px 10px 10px 15px;
+    outline: none;
+    border: 1px solid var(--light-blue);
+    border-radius: 3px;
+    box-shadow: 0 3px 8px 0 var(--box-shadow-alt);
+}
+
+.label__window {
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+
+.add-remove-icon {
+    margin-left: 20px;
+}
+
+.add-remove-icon:hover {
+    cursor: pointer;
+}
