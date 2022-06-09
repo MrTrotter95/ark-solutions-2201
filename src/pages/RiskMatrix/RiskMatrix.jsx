@@ -281,7 +281,7 @@ const RiskMatrix = () => {
             </div>
 
             <div className="button-container">
-            <button className="primary-button label">Print</button>
+            <button className="primary-button label">Save To PDF</button>
             </div>
         </div>
     )

@@ -18,6 +18,7 @@
 }
 
 .input-sm__window {
+    height: 38px;
     width: 65px;
     padding: 10px 10px 10px 15px;
     outline: none;
@@ -31,6 +32,10 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.5px;
+}
+
+.rowAreaResult {
+    width: 65px;
 }
 
 .add-remove-icon {
