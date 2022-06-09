@@ -9,7 +9,8 @@ const TBodyOne = (props) => {
                 joineryId={item.joineryId}
                 height={item.height}
                 width={item.width}
-                area={item.area}/>
+                area={item.area}
+                />
             ))}
         </tbody>
     )

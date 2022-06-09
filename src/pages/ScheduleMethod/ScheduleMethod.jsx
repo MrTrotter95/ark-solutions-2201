@@ -7,6 +7,7 @@ import './ScheduleMethod.css';
 import minus from "../../assets/images/icons/remove.svg";
 import add from "../../assets/images/icons/add.svg";
 
+//I was Wanting to imitate saving the tables data to a "database"
 const tableOneData = [
     {
         id: "01",
@@ -24,7 +25,6 @@ const ScheduleMethod = () => {
         setTableOneRows((prevRowsOne) => {
             return [...prevRowsOne, tableOneRows]
         })
-
     }
 
     const removeRowOneHandler =() => {
