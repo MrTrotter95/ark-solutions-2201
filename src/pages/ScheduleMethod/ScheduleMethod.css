@@ -45,3 +45,18 @@
 .add-remove-icon:hover {
     cursor: pointer;
 }
+
+.container__window-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 20px 0 auto;
+}
+
+.window-area__button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
