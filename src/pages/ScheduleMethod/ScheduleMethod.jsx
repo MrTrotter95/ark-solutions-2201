@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import TBodyOne from "./TBodyOne";
+import TBodyTwo from "./TBodyTwo";
 import CardSmall from "../../components/CardSmall";
 import ClientInfo from "../../components/ClientInfo";
 import './ScheduleMethod.css';
@@ -17,12 +18,24 @@ const tableOneData = [
     }
 ];
 
+const tableTwoData = [
+    {
+        id: 1,
+        joineryId: "EJ01",
+        height: 0,
+        width: 0,
+        area: 0
+    }
+];
+
 const ScheduleMethod = () => {
     const [wallHeight, setWallheight] = useState(0);
     const [totalPerim, setTotalPerim] = useState(0);
     const [northPerim, setNorthPerim] = useState(0);
     const [tableOneRows, setTableOneRows] = useState(tableOneData);
+    const [tableTwoRows, setTableTwoRows] = useState(tableTwoData);
     const [tableOneWindowArea, setTableOneWindowArea] = useState(0);
+    const [tableTwoWindowArea, setTableTwoWindowArea] = useState(0);
 
     //--- RESULTS E,S,W ---//
     const [eswPerim, setEswPerim] = useState(0);
@@ -48,6 +61,7 @@ const ScheduleMethod = () => {
         setNorthPerim(event.target.value);
     }
 
+    //--- TABLE ONE FUNCTIONS ---//
     const addOneRowHandler = () => {
         const emptyRow = {
             id: Math.floor(Math.random() * 100000),
@@ -87,6 +101,47 @@ const ScheduleMethod = () => {
         }
     }
 
+
+    //--- TALBE TWO FUNCTIONS ---//
+    const addOneRowHandlerTwo = () => {
+        const emptyRow = {
+            id: Math.floor(Math.random() * 100000),
+            joineryId: " ",
+            height: 0,
+            width: 0,
+            area: 0
+        };
+        setTableTwoRows((prevRowsTwo) => {
+            return [...prevRowsTwo, emptyRow]
+        })
+    }
+
+    const removeRowOneHandlerTwo =() => {
+        tableTwoRows.pop();
+        setTableTwoRows((prevRowsTwo) => {
+            return [...prevRowsTwo]
+        })
+    }
+
+    const calcWindowAreasTwo = () => {
+        let TableTwoAreaResult = 0;
+        for(let currentRow of tableTwoRows){
+            TableTwoAreaResult += currentRow.area
+        }
+        setTableTwoWindowArea(TableTwoAreaResult.toFixed(2));
+    }
+
+    const updateRowTwoHandler = (updatedRow) => {
+        for(let row of tableTwoRows){
+            if(row.id === updatedRow.id){
+                row.joineryId = updatedRow.joineryId;
+                row.height = updatedRow.height;
+                row.width = updatedRow.width;
+                row.area = updatedRow.area;
+            }
+        }
+    }
+
     //--- RESULTS ---//
     const resultsHandler = () => {
         //--- WINDOWS E,S,W ---//
@@ -107,7 +162,16 @@ const ScheduleMethod = () => {
 
         let neswWallAreaResult = totalPerim * wallHeight;
         setNeswWallArea(neswWallAreaResult.toFixed(2));
+
+        let neswGlazingResult = parseInt(tableOneWindowArea) + parseInt(tableTwoWindowArea);
+        setNeswGlazingArea(neswGlazingResult.toFixed(2));
         
+        let neswResult = neswGlazingResult / neswWallAreaResult * 100;
+        setNeswPercent(neswResult.toFixed(2));
+    }
+
+    const print = () => {
+        window.print();
     }
 
     return(
@@ -183,8 +247,8 @@ const ScheduleMethod = () => {
                 <div className="flex-row">
                 <h4 className="h5 secondary-black">Windows ( N )</h4>
                     <div>
-                        <img className="add-remove-icon" src={minus} alt="Remove"/>
-                        <img className="add-remove-icon" src={add} alt="Add"/>
+                        <img className="add-remove-icon" src={minus} onClick={removeRowOneHandlerTwo} alt="Remove"/>
+                        <img className="add-remove-icon" src={add} onClick={addOneRowHandlerTwo} alt="Add"/>
                     </div>
                 </div>
                 <CardSmall>
@@ -197,10 +261,16 @@ const ScheduleMethod = () => {
                             <th><p className="label__window boldless ">Area</p></th>
                         </tr>
                     </thead>
-                    <tbody>
-                       
-                    </tbody>
+                    <TBodyTwo items={tableTwoRows} onUpdateRowTwo={updateRowTwoHandler} />
                 </table>
+
+                <div className="container__window-area">
+                        <p className="body bold dark-gray">Total Area:</p>
+                        <h5 className="h5 light-blue">{tableTwoWindowArea}</h5>
+                    </div>
+                    <div className="window-area__button">
+                        <button onClick={calcWindowAreasTwo} className="primary-button label">Calculate</button>
+                    </div>
                 </CardSmall>
             </div>
             <div className="container-sm">
@@ -256,7 +326,7 @@ const ScheduleMethod = () => {
 
             <div className="button-container">
                 <button className="primary-button label" onClick={resultsHandler}>Calculate</button>
-                <button className="secondary-button label">Save To PDF</button>
+                <button className="secondary-button label" onClick={print}>Save To PDF</button>
             </div>
         </div>
     )

@@ -1,0 +1,60 @@
+.no-margin-title {
+    margin-left: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.label-large {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+
+.link-large {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: var(--blue);
+}
+
+.column-gap-10 {
+    column-gap: 10px;
+}
+
+.column-gap-20 {
+    column-gap: 20px;
+}
+
+.row-gap-20 {
+    row-gap: 20px;
+}

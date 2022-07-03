@@ -10,6 +10,7 @@ import ScheduleMethod from "../pages/ScheduleMethod/ScheduleMethod";
 import RiskMatrix from "../pages/RiskMatrix/RiskMatrix";
 import WindZone from "../pages/WindZone/WindZone";
 import Additional from "../pages/Additional/Additional";
+import Council from "../pages/Council/Council";
 
 const Nav = () => {
 
@@ -20,6 +21,7 @@ const Nav = () => {
     const [wantMatrix, setWantMatrix] = useState(false);
     const [wantWind, setWantWind] = useState(false);
     const [wantAdditional, setWantAdditional] = useState(false);
+    const [wantCouncil, setWantCouncil] = useState(false);
 
 
 
@@ -31,6 +33,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantCouncil(false);
     }
 
     const clickAboutHandler = () => {
@@ -41,6 +44,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantCouncil(false);
     }
 
     const clickHelpHandler = () => {
@@ -51,6 +55,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantCouncil(false);
     }
 
     const clickScheduleHandler = () => {
@@ -61,6 +66,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantCouncil(false);
     }
 
     const clickMatrixHandler = () => {
@@ -71,6 +77,7 @@ const Nav = () => {
         setWantMatrix(true);
         setWantWind(false);
         setWantAdditional(false);
+        setWantCouncil(false);
     }
 
     const clickWindHandler = () => {
@@ -81,6 +88,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(true);
         setWantAdditional(false);
+        setWantCouncil(false);
     }
 
     const clickAdditionalHandler = () => {
@@ -91,6 +99,18 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(true);
+        setWantCouncil(false);
+    }
+
+    const clickCouncilHandler = () => {
+        setWantHome(false);
+        setWantAbout(false);
+        setWantHelp(false);
+        setWantSchedule(false);
+        setWantMatrix(false);
+        setWantWind(false);
+        setWantAdditional(false);
+        setWantCouncil(true);
     }
 
     return(
@@ -105,6 +125,7 @@ const Nav = () => {
                     matrix={clickMatrixHandler}
                     wind={clickWindHandler}
                     additional={clickAdditionalHandler}
+                    council={clickCouncilHandler}
                     />
                 </header>
                 {wantHome && <Home/>}
@@ -114,6 +135,7 @@ const Nav = () => {
                 {wantMatrix && <RiskMatrix/>}
                 {wantWind && <WindZone/>}
                 {wantAdditional && <Additional/>}
+                {wantCouncil && <Council/>}
         </div>
 
 

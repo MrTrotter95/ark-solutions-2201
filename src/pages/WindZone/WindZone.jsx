@@ -6,6 +6,11 @@ import questionMark from "../../assets/images/icons/question-mark-primary.png";
 import WindRegionImg from "../../assets/images/windZoneImages/windRegions.jpg";
 
 const WindZone = () => {
+    const print = () => {
+        window.print();
+    }
+
+
   return (
     <div className="container-sm" style={{marginTop: 75}}>
       <h4 className="h4 secondary-black">Wind Zone Determination</h4>
@@ -77,14 +82,14 @@ const WindZone = () => {
               <td><p className="body bold ">Result</p></td>
               <td></td>
               <td>
-                <h5 className="h5 light-blue windZoneResult text-center"></h5>
+                <h5 className="h5 light-blue windZoneResult text-center">Low</h5>
               </td>
             </tr>
           </tbody>
         </table>
       </CardSmall>
       <div className="button-container">
-        <button className="primary-button label">Save To PDF</button>
+        <button className="primary-button label" onClick={print}>Save To PDF</button>
       </div>
 
       <div className="windRegionImageParentContainer" onClick={windRegionImgClose}>

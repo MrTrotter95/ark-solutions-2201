@@ -24,6 +24,16 @@ body {
     --box-shadow: rgba(74, 74, 74, 35%);
     --box-shadow-alt: rgba(74, 74, 74, 0.20);
 }
+
+@media print {
+    .nav__ul, .nav__li, .primary-button, .secondary-button, .question-mark-primary, .additional-text, .add-remove-icon {
+        display: none;
+    }
+
+    .App {
+        -webkit-print-color-adjust: exact;
+    }
+}
 /* ---------------------     END OF GLOBAL RESET     ---------------------  */
 
 /* ---------------------     START OF TYPOGRAPHY     ---------------------  */
@@ -303,7 +313,7 @@ body {
 @media (min-width: 800px) {
     .container-md {
         width: 500px;
-        margin: 30px 0 0 20px;
+        margin: 0 0 0 20px;
     }
    
     .container-lg {

@@ -70,6 +70,10 @@ const RiskMatrix = () => {
         }
     }
 
+    const print = () => {
+        window.print();
+    }
+
     return(
         <div className="container-lg flex-wrap">
             <h3 className="h3">Moisture Risk Matrix</h3>
@@ -170,7 +174,7 @@ const RiskMatrix = () => {
                 </CardLarge>
             </div>
 
-            <div className="container-md">
+            <div className="container-md print-margin">
                 <h5 className="h5 secondary-black">Result</h5>
                 <CardMedium>
                     <div className="flex">
@@ -281,7 +285,7 @@ const RiskMatrix = () => {
             </div>
 
             <div className="button-container">
-            <button className="primary-button label">Save To PDF</button>
+            <button className="primary-button label" onClick={print}>Save To PDF</button>
             </div>
         </div>
     )
