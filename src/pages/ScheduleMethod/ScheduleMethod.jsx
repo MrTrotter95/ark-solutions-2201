@@ -176,10 +176,10 @@ const ScheduleMethod = () => {
 
     return(
         <div className="container-lg flex-wrap">
-            <h3 className="h3">H1 Schedule Method</h3>
+            <h3 className="h2 fw-900 black">H1 Schedule Method</h3>
                 <ClientInfo/>
             <div className="container-sm">
-                <h4 className="h5 secondary-black">General Info</h4>
+                <h4 className="h5 fw-900 black">General Info</h4>
                 <CardSmall>
                     <table className="table-sm">
                         <tbody>
@@ -200,13 +200,13 @@ const ScheduleMethod = () => {
                 </CardSmall>
             </div>
             <div className="container-sm">
-                <h4 className="h5 secondary-black">Means of compliance</h4>
+                <h4 className="h5 fw-900 black">Means of compliance</h4>
                 <CardSmall>
                     <p className="body dark-gray">
-                    • A glazing area that is less than 30% of the total habitable wall area(m²) 
+                    • A glazing area that is less than 30% of the total habitable wall area (m²) 
                     on the East, South, and West facing walls.</p>
                     <p className="body dark-gray">
-                    • A glazing area that is less than 30% of the total habitable wall area(m²) 
+                    • A glazing area that is less than 30% of the total habitable wall area (m²) 
                     on the North, East, South, and West facing walls.</p>
                     <p className="body dark-gray">
                     • Dwelling construction methods must comply with NZBC H1/AS1 to use the H1 
@@ -215,7 +215,7 @@ const ScheduleMethod = () => {
             </div>
             <div className="container-sm">
                 <div className="flex-row">
-                    <h4 className="h5 secondary-black">Windows ( E,S,W )</h4>
+                    <h4 className="h5 fw-900 black">Windows ( E,S,W )</h4>
                     <div>
                         <img className="add-remove-icon" src={minus} onClick={removeRowOneHandler} alt="Remove"/>
                         <img className="add-remove-icon" src={add} onClick={addOneRowHandler} alt="Add"/>
@@ -225,18 +225,18 @@ const ScheduleMethod = () => {
                     <table className="table-sm">
                         <thead>
                             <tr>
-                                <th><p className="label__window boldless ">Joinery ID</p></th>
-                                <th><p className="label__window boldless ">Height</p></th>
-                                <th><p className="label__window boldless ">Width</p></th>
-                                <th><p className="label__window boldless ">Area</p></th>
+                                <th><p className="label__window fw-800">Joinery ID</p></th>
+                                <th><p className="label__window fw-800">Height</p></th>
+                                <th><p className="label__window fw-800">Width</p></th>
+                                <th><p className="label__window fw-800">Area</p></th>
                             </tr>
                         </thead>
                         <TBodyOne items={tableOneRows} onUpdateRowOne={updateRowOneHandler} />
                     </table>
 
                     <div className="container__window-area">
-                        <p className="body bold dark-gray">Total Area:</p>
-                        <h5 className="h5 light-blue">{tableOneWindowArea}</h5>
+                        <p className="body fw-900 black">Total Area:</p>
+                        <h5 className="h5 bright-blue">{tableOneWindowArea}</h5>
                     </div>
                     <div className="window-area__button">
                         <button onClick={calcWindowAreasOne} className="primary-button label">Calculate</button>
@@ -245,7 +245,7 @@ const ScheduleMethod = () => {
             </div>
             <div className="container-sm">
                 <div className="flex-row">
-                <h4 className="h5 secondary-black">Windows ( N )</h4>
+                <h4 className="h5 fw-900 black">Windows ( N )</h4>
                     <div>
                         <img className="add-remove-icon" src={minus} onClick={removeRowOneHandlerTwo} alt="Remove"/>
                         <img className="add-remove-icon" src={add} onClick={addOneRowHandlerTwo} alt="Add"/>
@@ -255,18 +255,18 @@ const ScheduleMethod = () => {
                 <table className="table-sm" id="table2">
                     <thead>
                         <tr className="table-row">
-                            <th><p className="label__window boldless ">Joinery ID</p></th>
-                            <th><p className="label__window boldless ">Height</p></th>
-                            <th><p className="label__window boldless ">Width</p></th>
-                            <th><p className="label__window boldless ">Area</p></th>
+                            <th><p className="label__window fw-800">Joinery ID</p></th>
+                            <th><p className="label__window fw-800">Height</p></th>
+                            <th><p className="label__window fw-800">Width</p></th>
+                            <th><p className="label__window fw-800">Area</p></th>
                         </tr>
                     </thead>
                     <TBodyTwo items={tableTwoRows} onUpdateRowTwo={updateRowTwoHandler} />
                 </table>
 
                 <div className="container__window-area">
-                        <p className="body bold dark-gray">Total Area:</p>
-                        <h5 className="h5 light-blue">{tableTwoWindowArea}</h5>
+                        <p className="body fw-900 black">Total Area:</p>
+                        <h5 className="h5 bright-blue">{tableTwoWindowArea}</h5>
                     </div>
                     <div className="window-area__button">
                         <button onClick={calcWindowAreasTwo} className="primary-button label">Calculate</button>
@@ -274,50 +274,50 @@ const ScheduleMethod = () => {
                 </CardSmall>
             </div>
             <div className="container-sm">
-                <h4 className="h5 secondary-black">Results ( E,S,W )</h4>
+                <h4 className="h5 fw-900 black">Results ( E,S,W )</h4>
                 <CardSmall>
                     <table className="table-sm">
                         <tbody>
                             <tr className="table-row">
                                 <td><p className="body dark-gray">Total Perimeter</p></td>
-                                <td><h5 className="h5 dark-gray">{eswPerim}m</h5></td>
+                                <td><h5 className="h5 black">{eswPerim}m</h5></td>
                             </tr>
                             <tr className="table-row">
                                 <td><p className="body dark-gray">Wall Area</p></td>
-                                <td><h5 className="h5 dark-gray">{eswWallArea}m²</h5></td>
+                                <td><h5 className="h5 black">{eswWallArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
                                 <td><p className="body dark-gray">Total Glazing Area</p></td>
-                                <td><h5 className="h5 dark-gray">{eswGlazingArea}m²</h5></td>
+                                <td><h5 className="h5 black">{eswGlazingArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body bold dark-gray">Result</p></td>
-                                <td><h5 className="h5 light-blue">{eswPercent}%</h5></td>
+                                <td><p className="body fw-900 black">Result</p></td>
+                                <td><h5 className="h5 bright-blue">{eswPercent}%</h5></td>
                             </tr>
                         </tbody>
                     </table>
                 </CardSmall>
             </div>
             <div className="container-sm">
-                <h4 className="h5 secondary-black">Results ( N,E,S,W )</h4>
+                <h4 className="h5 fw-900 black">Results ( N,E,S,W )</h4>
                 <CardSmall>
                     <table className="table-sm">
                         <tbody>
                             <tr className="table-row">
                                 <td><p className="body dark-gray">Total Perimeter</p></td>
-                                <td><h5 className="h5 dark-gray">{neswPerim}m</h5></td>
+                                <td><h5 className="h5 black">{neswPerim}m</h5></td>
                             </tr>
                             <tr className="table-row">
                                 <td><p className="body dark-gray">Wall Area</p></td>
-                                <td><h5 className="h5 dark-gray">{neswWallArea}m²</h5></td>
+                                <td><h5 className="h5 black">{neswWallArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
                                 <td><p className="body dark-gray">Total Glazing Area</p></td>
-                                <td><h5 className="h5 dark-gray">{neswGlazingArea}m²</h5></td>
+                                <td><h5 className="h5 black">{neswGlazingArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body bold dark-gray">Result</p></td>
-                                <td><h5 className="h5 light-blue">{neswPercent}%</h5></td>
+                                <td><p className="body fw-900 black">Result</p></td>
+                                <td><h5 className="h5 bright-blue">{neswPercent}%</h5></td>
                             </tr>
                         </tbody>
                     </table>

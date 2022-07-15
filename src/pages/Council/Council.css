@@ -6,6 +6,10 @@
     margin-bottom: 0;
 }
 
+.mb-5 {
+    margin-bottom: 5px;
+}
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -22,6 +26,10 @@
     margin-bottom: 40px;
 }
 
+.mt-5 {
+    margin-top: 5px;
+}
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -34,12 +42,7 @@
     margin-top: 30px;
 }
 
-.label-large {
-    font-family: Plus Jakarta Sans;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 0.5px;
-}
+
 
 .link-large {
     text-decoration: underline;

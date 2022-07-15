@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import CardSmall from "../../components/CardSmall";
+import CardSmallalt from "../../components/CardSmallalt";
 
 const SiteCoverage = () => {
     const [siteCoverage, setSiteCoverage] = useState(0);
@@ -13,9 +13,9 @@ const SiteCoverage = () => {
     }
 
     return(
-        <div className="container-sm">
-            <h4 className="h4 secondary-black">Site Coverage</h4>
-            <CardSmall>
+        <div>
+            <h4 className="h5 fw-900 black pl-20">Site Coverage</h4>
+            <CardSmallalt>
             <table className="table-sm" onChange={siteCoverageHandler}>
                   <tbody>
                     <tr className="table-row">
@@ -31,12 +31,12 @@ const SiteCoverage = () => {
                         <td><input type="number" className="input-sm label" id="siteCoverageArea"/></td>
                     </tr>
                     <tr className="table-row">
-                        <td><p className="body boldless">Site Coverage Area</p></td>
-                        <td><h5 className="h5-0mg light-blue text-center " id="siteCoverageResult">{siteCoverage}%</h5></td>
+                        <td><p className="body fw-900 black">Site Coverage Area</p></td>
+                        <td><h5 className="h5-0mg bright-blue fw-900 text-center " id="siteCoverageResult">{siteCoverage}%</h5></td>
                     </tr>
                   </tbody>
                 </table>
-            </CardSmall>
+            </CardSmallalt>
         </div>
     )
 };

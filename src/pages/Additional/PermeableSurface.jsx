@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import CardSmall from "../../components/CardSmall";
+import CardSmallalt from "../../components/CardSmallalt";
 
 
 const PermeableSurface = () => {
@@ -25,9 +25,9 @@ const PermeableSurface = () => {
     };
 
     return(
-        <div className="container-sm">
-            <h4 className="h4 secondary-black">Permeable Surface</h4>
-            <CardSmall>
+        <div>
+            <h4 className="h5 fw-900 black pl-20">Permeable Surface</h4>
+            <CardSmallalt>
                 <table className="table-sm" onChange={PermeableHandler}>
                   <tbody>
                     <tr className="table-row">
@@ -46,22 +46,22 @@ const PermeableSurface = () => {
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body boldless">Total Impervious</p></td>
-                        <td><h5 className="h5-0mg light-blue text-center " id="permeableResultOne">{areaImperv}m²</h5></td>
+                        <td><p className="body fw-900 black">Total Impervious</p></td>
+                        <td><h5 className="h5-0mg bright-blue fw-800 text-center " id="permeableResultOne">{areaImperv}m²</h5></td>
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body boldless">Total Permeable</p></td>
-                        <td><h5 className="h5-0mg light-blue text-center " id="permeableResultTwo">{areaPerm}m²</h5></td>
+                        <td><p className="body fw-900 black">Total Permeable</p></td>
+                        <td><h5 className="h5-0mg bright-blue fw-800 text-center " id="permeableResultTwo">{areaPerm}m²</h5></td>
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body boldless">Total Permeable</p></td>
-                        <td><h5 className="h5-0mg light-blue text-center " id="permeableResultThree">{percentPerm}%</h5></td>
+                        <td><p className="body fw-900 black">Total Permeable</p></td>
+                        <td><h5 className="h5-0mg bright-blue fw-800 text-center " id="permeableResultThree">{percentPerm}%</h5></td>
                     </tr>
                   </tbody>
                 </table>
-            </CardSmall>
+            </CardSmallalt>
         </div>
 
     )

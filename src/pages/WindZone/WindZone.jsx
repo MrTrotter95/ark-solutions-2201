@@ -13,7 +13,7 @@ const WindZone = () => {
 
   return (
     <div className="container-sm" style={{marginTop: 75}}>
-      <h4 className="h4 secondary-black">Wind Zone Determination</h4>
+      <h4 className="h5 fw-900 black">Wind Zone Determination</h4>
       <CardSmall>
         <table className="table-sm" onChange={windZoneCalculation}>
           <tbody className="table-sm">
@@ -79,10 +79,10 @@ const WindZone = () => {
             </tr>
 
             <tr className="table-row">
-              <td><p className="body bold ">Result</p></td>
+              <td><p className="h5-0mg fw-900 black">Result</p></td>
               <td></td>
               <td>
-                <h5 className="h5 light-blue windZoneResult text-center">Low</h5>
+                <h5 className="h5-0mg bright-blue fw-900 windZoneResult text-center">Low</h5>
               </td>
             </tr>
           </tbody>

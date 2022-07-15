@@ -22,9 +22,12 @@
     width: 65px;
     padding: 10px 10px 10px 15px;
     outline: none;
-    border: 1px solid var(--light-blue);
-    border-radius: 3px;
-    box-shadow: 0 3px 8px 0 var(--box-shadow-alt);
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+}
+
+.input-sm__window:focus {
+    border: 1px solid var(--bright-blue);
 }
 
 .label__window {

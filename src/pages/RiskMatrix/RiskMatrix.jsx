@@ -76,16 +76,16 @@ const RiskMatrix = () => {
 
     return(
         <div className="container-lg flex-wrap">
-            <h3 className="h3">Moisture Risk Matrix</h3>
+            <h3 className="h2 fw-900 black">Moisture Risk Matrix</h3>
                 <ClientInfo/>
 
             <div className="container__risk-matrix" onChange={ResultHandler}>
-                <h5 className="h5 secondary-black">House Details</h5>
+                <h5 className="h5 fw-900 black">House Details</h5>
                 <CardLarge>
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label boldless secondary-black input-label">Wind Zone</p>
-                            <p className="label bold secondary-pink input-label" id="windRegionText">Score: {windScore}</p>
+                            <p className="label fw-800 input-label">Wind Zone</p>
+                            <p className="label fw-800 secondary-pink input-label" id="windRegionText">Score: {windScore}</p>
                         </div>
                         <select className="select-lg label dark-gray" name="wind" id="wind" >
                             <option value="0">Low - NZS 3604 limit 32m/s</option>
@@ -98,10 +98,10 @@ const RiskMatrix = () => {
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
                             <div className="flex">
-                                <p className="label boldless secondary-black input-label">Number Of Storeys</p>
+                                <p className="label fw-800 input-label">Number Of Storeys</p>
                                 <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
                             </div>
-                            <p className="label bold secondary-pink input-label" id="storeysText">Score: {storeysScore}</p>
+                            <p className="label fw-800 secondary-pink input-label" id="storeysText">Score: {storeysScore}</p>
                         </div>
                         <select className="select-lg label dark-gray" name="storeys" id="storeys">
                             <option value="0">1 storey</option>
@@ -114,10 +114,10 @@ const RiskMatrix = () => {
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
                             <div className="flex">
-                                <p className="label boldless secondary-black input-label">Roof/Wall Intersection Design</p>
+                                <p className="label fw-800 input-label">Roof/Wall Intersection Design</p>
                                 <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
                             </div>
-                            <p className="label bold secondary-pink input-label" id="intersectionText">Score: {intersectionScore}</p>
+                            <p className="label fw-800 secondary-pink input-label" id="intersectionText">Score: {intersectionScore}</p>
                         </div>
                         <select className="select-lg label dark-gray" name="intersection" id="intersection">
                             <option value="0">Roof-to-wall intersection fully protected</option>
@@ -129,8 +129,8 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label boldless secondary-black input-label">Eaves Width</p>
-                            <p className="label bold secondary-pink input-label" id="eavesText">Score: {eavesScore}</p>
+                            <p className="label fw-800 input-label">Eaves Width</p>
+                            <p className="label fw-800 secondary-pink input-label" id="eavesText">Score: {eavesScore}</p>
                         </div>
                         <select className="select-max label dark-gray" name="eaves" id="eaves">
                             <option value="0">Greater than 600mm for single storey</option>
@@ -143,10 +143,10 @@ const RiskMatrix = () => {
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
                             <div className="flex">
-                                <p className="label boldless secondary-black input-label">Envelope Complexity</p>
+                                <p className="label fw-800 input-label">Envelope Complexity</p>
                                 <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
                             </div>
-                            <p className="label bold pink input-label" id="envelopeText">Score: {envelopeScore}</p>
+                            <p className="label fw-800 pink input-label" id="envelopeText">Score: {envelopeScore}</p>
                         </div>
                         <select className="select-max label dark-gray" name="envelope" id="envelope">
                             <option value="0">Simple rectangular, L, T or boomerang shape, with single cladding type</option>
@@ -159,10 +159,10 @@ const RiskMatrix = () => {
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
                             <div className="flex">
-                                <p className="label boldless secondary-black input-label">Deck Design</p>
+                                <p className="label fw-800 input-label">Deck Design</p>
                                 <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
                             </div>
-                            <p className="label bold secondary-pink input-label" id="deckText">Score: {deckScore}</p>
+                            <p className="label fw-800 secondary-pink input-label" id="deckText">Score: {deckScore}</p>
                         </div>
                         <select className="select-lg label dark-gray" name="deck" id="deck">
                             <option value="0">None or, timber slat deck or porch at ground-floor level</option>
@@ -175,11 +175,11 @@ const RiskMatrix = () => {
             </div>
 
             <div className="container-md print-margin">
-                <h5 className="h5 secondary-black">Result</h5>
+                <h5 className="h5 fw-900 black">Result</h5>
                 <CardMedium>
                     <div className="flex">
-                        <h3 className="h3-0mg secondary-blue bold" id="integerResult">{integerScore}</h3>
-                        <p className="body bold secondary-black" id="textResult">{textScore}</p>
+                        <h3 className="h3-0mg bright-blue fw-800" id="integerResult">{integerScore}</h3>
+                        <p className="body fw-800 black" id="textResult">{textScore}</p>
                     </div>
                 </CardMedium>
             </div>
@@ -203,7 +203,7 @@ const RiskMatrix = () => {
             
 
             <div className="container-sm">
-                <h4 className="h5 secondary-black">Direct Fixed</h4>
+                <h4 className="h5 fw-900 black">Direct Fixed</h4>
                 <CardSmall>
                     <p className="label bold secondary-black">Direct fixed to framing</p>
                     <div className="flex allowed-cladding__top">
@@ -242,7 +242,7 @@ const RiskMatrix = () => {
             </div>
 
             <div className="container-sm">
-            <h4 className="h5 secondary-black">Over Cavity</h4>
+            <h4 className="h5 fw-900 black">Over Cavity</h4>
                 <CardSmall>
                     <p className="label bold secondary-black">Over nominal 20mm drained cavity</p>
                     <div className="flex allowed-cladding__top">

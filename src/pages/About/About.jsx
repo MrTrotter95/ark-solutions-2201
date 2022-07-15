@@ -4,10 +4,10 @@ import CardLargeAlt from "../../components/CardLargeAlt";
 const About = () => {
     return(
         <div className="container-lg">
-            <h3 className="h3 bold">About</h3>
+            <h3 className="h2 fw-900 black">About</h3>
             
             <CardLargeAlt>
-                <h4 className="h4-0mg secondary-black">About Ark</h4>
+                <h4 className="h4-0mg fw-900 light-black">About Ark</h4>
                 <p className="body dark-gray">Assisting New Zealand Architectural 
                 designers with residential housing compliance.</p>
                 <br/>
@@ -17,14 +17,14 @@ const About = () => {
             </CardLargeAlt>
             
             <CardLargeAlt>
-                <h4 className="h4-0mg secondary-black">Future Update</h4>
+                <h4 className="h4-0mg fw-900 light-black">Future Update</h4>
                 <p className="body dark-gray">Including "resources" section. 
                 This will contain your local council weblinks
                  including GIS webmaps, Hazards Maps, District Plans, Contact Info.</p>
             </CardLargeAlt>
             
             <CardLargeAlt>
-                <h4 className="h4-0mg secondary-black">Contact</h4>
+                <h4 className="h4-0mg fw-900 light-black">Contact</h4>
                 <p className="body dark-gray">To get in contact regarding issues, 
                 complaints, or general feedback pelase send an email to: 
                 <p className="link">arksolutionsnewzealand@gmail.com</p></p>

@@ -4,7 +4,7 @@
     margin: 10px auto 75px auto;
     padding: 30px 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 10%);
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px 0px;
 }
 
 @media (min-width: 500px) {
