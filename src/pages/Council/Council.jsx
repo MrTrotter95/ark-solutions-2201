@@ -1,6 +1,5 @@
 import React from "react";
 import CouncilTitle from "./CouncilTitle";
-import './Council.css';
 
 const Data = [
     {

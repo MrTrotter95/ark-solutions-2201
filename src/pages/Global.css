@@ -164,6 +164,12 @@ body {
     text-align: center;
 }
 
+.link-large {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: var(--blue);
+}
+
 @media (min-width: 800px) {
     .h1 {
         font-size: 60px;
@@ -314,10 +320,26 @@ body {
     flex-wrap: wrap;
 }
 
+.jc__start {
+    justify-content: flex-start;
+}
+
 .flex {
     display: flex;
     align-items: center;
     column-gap: 10px;
+}
+
+.column-gap-10 {
+    column-gap: 10px;
+}
+
+.column-gap-20 {
+    column-gap: 20px;
+}
+
+.row-gap-20 {
+    row-gap: 20px;
 }
 
 .container-sm {
@@ -352,6 +374,62 @@ body {
 
 .pl-20 {
     padding-left: 20px;
+}
+
+.no-margin-title {
+    margin-left: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
 }
 
 @media (min-width: 500px) {
@@ -405,8 +483,14 @@ body {
     border-radius: 2px;
 }
 
-.select-sm:focus {
-    border: 1px solid var(--bright-blue);
+.select-md {
+    width: 170px;
+    padding: 10px 10px 10px 15px;
+    margin-left: 5px;
+    outline: none;
+
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
 }
 
 .select-lg {
@@ -420,6 +504,15 @@ body {
     white-space:pre-wrap;
 }
 
+.select-overflow {
+    text-overflow: ellipsis;
+    white-space:pre-wrap;
+}
+
+.select-height {
+    height: 60px;
+}
+
 .select-max {
     width: 320px;
     height: 73px;
@@ -431,7 +524,7 @@ body {
     white-space:pre-wrap;
 }
 
-.select-lg:focus, .select-max:focus {
+.select-lg:focus, .select-max:focus, .select-sm:focus, .select-md:focus {
     border: 1px solid var(--bright-blue);
 }
 
@@ -440,7 +533,7 @@ body {
     padding: 10px 15px;
     outline: none;
     border: 1px solid #d8d8d8;
-    border-radius: 6px;
+    border-radius: 2px;
 }
 
 .input-md {
@@ -457,7 +550,7 @@ body {
     padding: 10px 15px;
     outline: none;
     border: 1px solid #d8d8d8;
-    border-radius: 6px;
+    border-radius: 2px;
 }
 
 .input-lg:focus, .input-sm:focus, .input-md:focus {
