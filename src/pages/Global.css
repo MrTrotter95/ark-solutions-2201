@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    background-color: #fbfbfb45;
+    background-color: #fbfbfb10;
 }
 
 :root {
@@ -23,10 +23,12 @@ body {
     --blue: #7370f0;
     --bright-blue: #0E7EFF;
     --secondary-blue: #413DF7;
-    --pink: #CB46D3;
+    
+    --pink: #CF74D4;
     --light-blue: rgba(82, 78, 221, 60%);
     --box-shadow: rgba(74, 74, 74, 35%);
     --box-shadow-alt: rgba(74, 74, 74, 0.20);
+    --new-blue: #4099FF;
 }
 
 @media print {
@@ -222,7 +224,7 @@ body {
 }
 
 .bright-blue {
-    color: #0E7EFF;
+    color: #4099FF;
 }
 .secondary-blue {
     color: #413DF7;
@@ -252,29 +254,27 @@ body {
     background-color: var(--pink);
     color: white;
     border: 2px solid var(--pink);
-    border-radius: 2px;
-    box-shadow: 0 3px 8px 0 var(--box-shadow);
+    border-radius: 4px;
 }
 
 .primary-button:hover {
-    background-color: #FFFFFF;
-    color: var(--black);
+    background-color: #A14BA6;
+    border-color: #A14BA6;
     cursor: pointer;
 }
 
 .secondary-button {
     width: 150px;
     padding: 10px 0;
-    background-color: var(--secondary-blue);
+    background-color: #268BFF;
     color: white;
-    border: 2px solid var(--secondary-blue);
-    border-radius: 2px;
-    box-shadow: 0 3px 8px 0 var(--box-shadow);
+    border: 2px solid #268BFF;
+    border-radius: 4px;
 }
 
 .secondary-button:hover {
-    background-color: #FFFFFF;
-    color: var(--black);
+    background-color: #1F70CC;
+    border-color: #1F70CC;
     cursor: pointer;
 }
 
