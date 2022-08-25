@@ -2,10 +2,8 @@ import React, {useState} from "react";
 import NavItems from "./NavItems";
 import './Nav.css';
 
-import hamburger from "../assets/images/icons/hamburger.png"
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
-import Help from "../pages/Help/Help";
 import ScheduleMethod from "../pages/ScheduleMethod/ScheduleMethod";
 import RiskMatrix from "../pages/RiskMatrix/RiskMatrix";
 import WindZone from "../pages/WindZone/WindZone";
@@ -16,7 +14,6 @@ const Nav = () => {
 
     const [wantHome, setWantHome] = useState(true);
     const [wantAbout, setWantAbout] = useState(false);
-    const [wantHelp, setWantHelp] = useState(false);
     const [wantSchedule, setWantSchedule] = useState(false);
     const [wantMatrix, setWantMatrix] = useState(false);
     const [wantWind, setWantWind] = useState(false);
@@ -28,7 +25,6 @@ const Nav = () => {
     const clickHomeHandler = () => {
         setWantHome(true);
         setWantAbout(false);
-        setWantHelp(false);
         setWantSchedule(false);
         setWantMatrix(false);
         setWantWind(false);
@@ -39,7 +35,6 @@ const Nav = () => {
     const clickAboutHandler = () => {
         setWantHome(false);
         setWantAbout(true);
-        setWantHelp(false);
         setWantSchedule(false);
         setWantMatrix(false);
         setWantWind(false);
@@ -50,7 +45,6 @@ const Nav = () => {
     const clickHelpHandler = () => {
         setWantHome(false);
         setWantAbout(false);
-        setWantHelp(true);
         setWantSchedule(false);
         setWantMatrix(false);
         setWantWind(false);
@@ -61,7 +55,6 @@ const Nav = () => {
     const clickScheduleHandler = () => {
         setWantHome(false);
         setWantAbout(false);
-        setWantHelp(false);
         setWantSchedule(true);
         setWantMatrix(false);
         setWantWind(false);
@@ -72,7 +65,6 @@ const Nav = () => {
     const clickMatrixHandler = () => {
         setWantHome(false);
         setWantAbout(false);
-        setWantHelp(false);
         setWantSchedule(false);
         setWantMatrix(true);
         setWantWind(false);
@@ -83,7 +75,6 @@ const Nav = () => {
     const clickWindHandler = () => {
         setWantHome(false);
         setWantAbout(false);
-        setWantHelp(false);
         setWantSchedule(false);
         setWantMatrix(false);
         setWantWind(true);
@@ -94,7 +85,6 @@ const Nav = () => {
     const clickAdditionalHandler = () => {
         setWantHome(false);
         setWantAbout(false);
-        setWantHelp(false);
         setWantSchedule(false);
         setWantMatrix(false);
         setWantWind(false);
@@ -105,7 +95,6 @@ const Nav = () => {
     const clickCouncilHandler = () => {
         setWantHome(false);
         setWantAbout(false);
-        setWantHelp(false);
         setWantSchedule(false);
         setWantMatrix(false);
         setWantWind(false);
@@ -120,7 +109,6 @@ const Nav = () => {
                     <NavItems 
                     home={clickHomeHandler}
                     about={clickAboutHandler} 
-                    help={clickHelpHandler} 
                     schedule={clickScheduleHandler} 
                     matrix={clickMatrixHandler}
                     wind={clickWindHandler}
@@ -130,7 +118,6 @@ const Nav = () => {
                 </header>
                 {wantHome && <Home/>}
                 {wantAbout && <About/>}
-                {wantHelp && <Help/>}
                 {wantSchedule && <ScheduleMethod/>}
                 {wantMatrix && <RiskMatrix/>}
                 {wantWind && <WindZone/>}

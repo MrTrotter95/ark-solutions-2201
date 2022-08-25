@@ -4,6 +4,9 @@ import './WindZone.css';
 
 import questionMark from "../../assets/images/icons/question-mark-primary.png";
 import WindRegionImg from "../../assets/images/windZoneImages/windRegions.jpg";
+import groundRoughnessImg from "../../assets/images/windZoneImages/groundRoughness.jpg";
+import siteExposureImg from "../../assets/images/windZoneImages/siteExposure.jpg";
+import topographyImg from "../../assets/images/windZoneImages/topographicClass.jpg";
 
 const WindZone = () => {
     const print = () => {
@@ -45,7 +48,9 @@ const WindZone = () => {
 
             <tr className="table-row">
               <td><p className="body dark-gray">Ground Roughness</p></td>
-              <td><img className="question-mark-primary" src={questionMark} alt="question mark" /></td>
+              <td>
+                <img className="question-mark-primary" src={questionMark} alt="question mark" onClick={groundRoughnessImgOpen}/>
+                </td>
               <td className="text-end">         
                 <select className="select-sm label dark-gray" name="groundRoughness" id="groundRoughness">
                   <option value="Urban">Urban</option>
@@ -56,7 +61,7 @@ const WindZone = () => {
 
             <tr className="table-row">
               <td><p className="body dark-gray">Site Exposure</p></td>
-              <td><img className="question-mark-primary" src={questionMark} alt="question mark" /></td>
+              <td><img className="question-mark-primary" src={questionMark} alt="question mark" onClick={siteExposureImgOpen} /></td>
               <td className="text-end">         
                 <select className="select-sm label dark-gray" name="siteExposure" id="siteExposure">
                   <option value="Sheltered">Sheltered</option>
@@ -67,7 +72,7 @@ const WindZone = () => {
 
             <tr className="table-row">
               <td><p className="body dark-gray">Topography</p></td>
-              <td><img className="question-mark-primary" src={questionMark} alt="question mark" /></td>
+              <td><img className="question-mark-primary" src={questionMark} alt="question mark" onClick={topographicImgOpen} /></td>
               <td className="text-end">         
                 <select className="select-sm label dark-gray" name="topography" id="topography">
                   <option value="T1">T1</option>
@@ -95,6 +100,24 @@ const WindZone = () => {
       <div className="windRegionImageParentContainer" onClick={windRegionImgClose}>
         <div className="windRegionImageChildContainer">
           <img src={WindRegionImg} alt="Wind Region" className="windRegionImage" />
+        </div>
+      </div>
+
+      <div className="groundRoughnessParentContainer" onClick={groundRoughnessImgClose}>
+        <div className="groundRoughnessChildContainer">
+          <img src={groundRoughnessImg} alt="Ground Roughness" className="groundRoughnessImage" />
+        </div>
+      </div>
+
+      <div className="siteExposureParentContainer" onClick={siteExposureImgClose}>
+        <div className="siteExposureChildContainer">
+          <img src={siteExposureImg} alt="Site Exposure" className="siteExposureImage" />
+        </div>
+      </div>
+
+      <div className="topographicParentContainer" onClick={topographicImgClose}>
+        <div className="topographicChildContainer">
+          <img src={topographyImg} alt="Topographic Class" className="topographicImage" />
         </div>
       </div>
     </div>
@@ -421,4 +444,34 @@ const windRegionImgOpen = () => {
 const windRegionImgClose = () => {
   const windRegionContainer = document.querySelector('.windRegionImageParentContainer')
   windRegionContainer.style.display = "none"
+}
+
+const groundRoughnessImgOpen = () => {
+    const groundRoughnessContainer = document.querySelector('.groundRoughnessParentContainer')
+    groundRoughnessContainer.style.display = "block"
+}
+  
+  const groundRoughnessImgClose = () => {
+    const groundRoughnessContainer = document.querySelector('.groundRoughnessParentContainer')
+    groundRoughnessContainer.style.display = "none"
+}
+
+const siteExposureImgOpen = () => {
+    const groundRoughnessContainer = document.querySelector('.siteExposureParentContainer')
+    groundRoughnessContainer.style.display = "block"
+}
+  
+  const siteExposureImgClose = () => {
+    const siteExposureContainer = document.querySelector('.siteExposureParentContainer')
+    siteExposureContainer.style.display = "none"
+}
+
+const topographicImgOpen = () => {
+    const topographicContainer = document.querySelector('.topographicParentContainer')
+    topographicContainer.style.display = "block"
+}
+  
+  const topographicImgClose = () => {
+    const topographicContainer = document.querySelector('.topographicParentContainer')
+    topographicContainer.style.display = "none"
 }

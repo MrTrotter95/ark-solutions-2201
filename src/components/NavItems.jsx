@@ -11,10 +11,6 @@ const NavItems = (props) => {
         props.about();
     }
 
-    const helpHandler = () => {
-        props.help();
-    }
-
     const scheduleHandler = () => {
         props.schedule();
     }
@@ -39,7 +35,6 @@ const NavItems = (props) => {
             <ul className="nav__ul black">
                 <li className="nav__li" onClick={homeHandler}><a className="nav__item">HOME</a></li>
                 <li className="nav__li" onClick={aboutHandler}><a className="nav__item">ABOUT</a></li>
-                <li className="nav__li" onClick={helpHandler}><a className="nav__item">HELP</a></li>
                 <li className="nav__li" onClick={scheduleHandler}><a className="nav__item">SCHEDULE METHOD</a></li>
                 <li className="nav__li" onClick={matrixHandler}><a className="nav__item">RISK MATRIX</a></li>
                 <li className="nav__li" onClick={windHandler}><a className="nav__item">WIND ZONE</a></li>

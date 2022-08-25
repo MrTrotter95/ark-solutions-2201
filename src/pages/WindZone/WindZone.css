@@ -1,3 +1,8 @@
+.question-mark-primary:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
 /*WIND REGION - IMAGE SETTINGS */
 .windRegionImageParentContainer {
     z-index: 2;
@@ -31,12 +36,148 @@
     to {transform: scale(1)}
 }
 
-.windRegionbutton:hover {
-    opacity: 0.8;
+@media (min-width: 500px) {
+    .windRegionImageChildContainer {
+        width: 460px;
+    }
+}
+
+@media (min-width: 900px) {
+    .windRegionImageChildContainer {
+        width: 500px;
+    }
+}
+
+
+/*GROUND ROUGHNESS - IMAGE SETTINGS */
+.groundRoughnessParentContainer {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.groundRoughnessChildContainer {
+    width: 320px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.groundRoughnessImage {
+    display: grid;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border: solid var(--dark-gray) 2px;
+    animation-name: windZoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes windZoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
 }
 
 @media (min-width: 500px) {
-    .windRegionImageChildContainer {
+    .groundRoughnessChildContainer {
+        width: 460px;
+    }
+}
+
+@media (min-width: 900px) {
+    .groundRoughnessChildContainer {
+        width: 860px;
+    }
+}
+
+
+
+/*SITE EXPOSURE - IMAGE SETTINGS */
+.siteExposureParentContainer {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.siteExposureChildContainer {
+    width: 320px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.siteExposureImage {
+    display: grid;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border: solid var(--dark-gray) 2px;
+    animation-name: windZoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes windZoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media (min-width: 500px) {
+    .siteExposureChildContainer {
+        width: 460px;
+    }
+}
+
+@media (min-width: 900px) {
+    .siteExposureChildContainer {
+        width: 860px;
+    }
+}
+
+
+
+/*TOPOGRAPHIC CLASS - IMAGE SETTINGS */
+.topographicParentContainer {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.topographicChildContainer {
+    width: 320px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.topographicImage {
+    display: grid;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border: solid var(--dark-gray) 2px;
+    animation-name: windZoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes windZoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media (min-width: 500px) {
+    .topographicChildContainer {
         width: 460px;
     }
 }

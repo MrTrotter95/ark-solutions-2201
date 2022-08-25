@@ -6,7 +6,6 @@ import CardLarge from "../../components/CardLarge";
 import ClientInfo from "../../components/ClientInfo";
 
 import './RiskMatrix.css';
-import questionMark from "../../assets/images/icons/question-mark-primary.png";
 import tick from "../../assets/images/icons/tick.png";
 import cross from "../../assets/images/icons/cross.png";
 
@@ -97,10 +96,7 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <div className="flex">
-                                <p className="label fw-800 input-label">Number Of Storeys</p>
-                                <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
-                            </div>
+                            <p className="label fw-800 input-label">Number Of Storeys</p>
                             <p className="label fw-800 secondary-pink input-label" id="storeysText">Score: {storeysScore}</p>
                         </div>
                         <select className="select-lg label dark-gray" name="storeys" id="storeys">
@@ -113,10 +109,7 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <div className="flex">
-                                <p className="label fw-800 input-label">Roof/Wall Intersection Design</p>
-                                <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
-                            </div>
+                            <p className="label fw-800 input-label">Roof/Wall Intersection Design</p>
                             <p className="label fw-800 secondary-pink input-label" id="intersectionText">Score: {intersectionScore}</p>
                         </div>
                         <select className="select-lg label dark-gray" name="intersection" id="intersection">
@@ -142,10 +135,7 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <div className="flex">
-                                <p className="label fw-800 input-label">Envelope Complexity</p>
-                                <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
-                            </div>
+                            <p className="label fw-800 input-label">Envelope Complexity</p>
                             <p className="label fw-800 pink input-label" id="envelopeText">Score: {envelopeScore}</p>
                         </div>
                         <select className="select-max label dark-gray" name="envelope" id="envelope">
@@ -158,10 +148,7 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <div className="flex">
-                                <p className="label fw-800 input-label">Deck Design</p>
-                                <img className="question-mark-primary__alt" src={questionMark} alt="question mark" />
-                            </div>
+                            <p className="label fw-800 input-label">Deck Design</p>
                             <p className="label fw-800 secondary-pink input-label" id="deckText">Score: {deckScore}</p>
                         </div>
                         <select className="select-lg label dark-gray" name="deck" id="deck">
@@ -207,35 +194,35 @@ const RiskMatrix = () => {
                 <CardSmall>
                     <p className="label bold secondary-black">Direct fixed to framing</p>
                     <div className="flex allowed-cladding__top">
-                        <img src={low} className="tick-cross"></img>
+                        <img src={low} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Timber weatherboards - all types</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={medium} className="tick-cross"></img>
+                        <img src={medium} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Timber weatherboard - bevel backed</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={low} className="tick-cross"></img>
+                        <img src={low} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Fibre cement weatherboards</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={low} className="tick-cross"></img>
+                        <img src={low} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Vertical profiled metal - corrugated and symmetrical trapezoidal</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Vertical profiled metal - corrugated only</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={medium} className="tick-cross"></img>
+                        <img src={medium} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Vertical timber board and batten</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={low} className="tick-cross"></img>
+                        <img src={low} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Fibre cement sheet jointed finish</p>
                     </div>
                     <div className="flex">
-                        <img src={low} className="tick-cross"></img>
+                        <img src={low} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Plywood sheet</p>
                     </div>
                 </CardSmall>
@@ -246,39 +233,39 @@ const RiskMatrix = () => {
                 <CardSmall>
                     <p className="label bold secondary-black">Over nominal 20mm drained cavity</p>
                     <div className="flex allowed-cladding__top">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Masonry Veneer</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Stucco</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Horizontal profiled meltal (corrugated and trapezoidal only</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Fibre cement sheet - flush & jointed finish</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">EIFS</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Rusticated weatherboards</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Fibre cement weatherboards</p>
                     </div>
                     <div className="flex allowed-cladding">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Plywood sheet</p>
                     </div>
                     <div className="flex">
-                        <img src={high} className="tick-cross"></img>
+                        <img src={high} className="tick-cross" alt="tick or a cross"></img>
                         <p className="body dark-gray">Bevel-back weatherboards</p>
                     </div>
                 </CardSmall>
