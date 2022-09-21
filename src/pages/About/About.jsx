@@ -8,19 +8,18 @@ const About = () => {
 
             <CardLargeAlt>
             <h4 className="h4-0mg fw-900 light-black">The Approach & Purpose</h4>
-            <p className="body dark-gray">To provide the Architectural industry in New Zealand with efficient, easy to use digital solutions to compliance  
-            calculations. These are typically completed with a pen and paper and/or using sometimes complicated and hard to interpret tables from the NZBC and NZS3604:2011,
-            resulting in increased productivity and efficiencies in the workplace.
+            <p className="body dark-gray">To provide the Architectural industry in Aotearoa with efficient, easy to use digital solutions to assist them
+            with residential housing compliance. These are real solutions to real workplace problems that overall increase efficiency and can help take out the guess work.
             </p>
             </CardLargeAlt>
             <CardLargeAlt>
             <h4 className="h4-0mg fw-900 light-black">Features Under Construction</h4>
+            <p className="body dark-gray">• Implementing React Router.</p>
             <p className="body dark-gray">• A higher quality solution to the "helper images" used on the wind zone and risk matrix calculator, including
-            allowing it to be mobile responsibe.</p>
+            allowing it to be mobile responsible.</p>
             <p className="body dark-gray">• Complete the design and build of the "print to pdf" functionality.</p>
-            <p className="body dark-gray">• Although the components have been designed for the Foundation, Floors, Walls, Posts and Roof Framing calculators
-            the functionality needs to be implemented.</p>
             <p className="body dark-gray">• A responsive navbar.</p>
+            <p className="body dark-gray">• As programming is a learning journery I plan on going back to revise and improve the code of older and previously completed calculators such as Schedule Method and the Risk Matrix.</p>
             </CardLargeAlt>
 
 
@@ -28,13 +27,13 @@ const About = () => {
             <CardLargeAlt>
                 <h4 className="h4-0mg fw-900 light-black">H1 Schedule Method</h4>
                 <p className="body dark-gray mb-20">For residential housing compliance a H1 Schedule Method calculation is required for all residential housing consents.
-                Workers in the industry typically do this calculation using pen and paper and have to work the area of their windows individually, and add them all up.
-                This process can take 40 minutes to complete and is very time consuming. This calculator reduses the time to complete this calculation to 10 minutes per single
+                Workers in the industry typically do this calculation using pen and paper and have to work the area of their windows individually and add them all up.
+                This process can take 40 minutes to complete and is very time consuming. This calculator reduces the time to complete this calculation to 10 minutes per single
                 storey residential house.
                 </p>
                 <h5 className="h5 fw-900 light-black">How it's used</h5>
                 <ol className="body dark-gray mb-20">
-                    <li>The user will input their wall height, total habitable perimeter and north peimter into the general info field.</li>
+                    <li>The user will input their wall height, total habitable perimeter and north perimeter into the general info field.</li>
                     <li>They will then enter in height and width of all openings that are within the habitable building envelope. They can add or remove more windows
                         to the table by using the + and - button. There are two components for this,
                         Windows (E,S,W) & Windows (N). The individual window area will calculate automatically.

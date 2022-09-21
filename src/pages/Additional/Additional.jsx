@@ -27,12 +27,14 @@ const Additional = () => {
                 <PermeableSurface/>
                 <SiteCoverage/>
             </div>
+
             <h3 className="h2 fw-900 black">Foundation & Floors</h3>
             <div className="flex-wrap mb-100">
                 <Bearers/>
                 <Stringers/>
                 <FloorJoist/>
             </div>
+
             <h3 className="h2 fw-900 black">Walls</h3>
             <div className="flex-wrap mb-100">
                 <LintelSingleOrTop/>
@@ -41,10 +43,15 @@ const Additional = () => {
                 <LintelsWallFloor/>
                 <LintelsFloor/>
             </div>
+
             <h3 className="h2 fw-900 black">Posts</h3>
             <div className="flex-wrap mb-100">
                 <PostFootings/>
                 <ConnectionToPost/>
+            </div>
+
+            <div>
+            <h5 className="mb-70 text-center h4 warning">Features below are under development and will not work.</h5>
             </div>
             <h3 className="h2 fw-900 black">Roof Framing</h3>
             <div className="flex-wrap mb-100">

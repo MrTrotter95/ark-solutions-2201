@@ -8,6 +8,7 @@ import ScheduleMethod from "../pages/ScheduleMethod/ScheduleMethod";
 import RiskMatrix from "../pages/RiskMatrix/RiskMatrix";
 import WindZone from "../pages/WindZone/WindZone";
 import Additional from "../pages/Additional/Additional";
+import FixingTablePage from "../pages/FixingTables/FixingTablePage";
 import Council from "../pages/Council/Council";
 
 const Nav = () => {
@@ -18,6 +19,7 @@ const Nav = () => {
     const [wantMatrix, setWantMatrix] = useState(false);
     const [wantWind, setWantWind] = useState(false);
     const [wantAdditional, setWantAdditional] = useState(false);
+    const [wantFixingTable, setWantFixingTable] = useState(false);
     const [wantCouncil, setWantCouncil] = useState(false);
 
 
@@ -29,6 +31,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantFixingTable(false);
         setWantCouncil(false);
     }
 
@@ -39,6 +42,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantFixingTable(false);
         setWantCouncil(false);
     }
 
@@ -49,6 +53,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantFixingTable(false);
         setWantCouncil(false);
     }
 
@@ -59,6 +64,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantFixingTable(false);
         setWantCouncil(false);
     }
 
@@ -69,6 +75,7 @@ const Nav = () => {
         setWantMatrix(true);
         setWantWind(false);
         setWantAdditional(false);
+        setWantFixingTable(false);
         setWantCouncil(false);
     }
 
@@ -79,6 +86,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(true);
         setWantAdditional(false);
+        setWantFixingTable(false);
         setWantCouncil(false);
     }
 
@@ -89,6 +97,18 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(true);
+        setWantFixingTable(false);
+        setWantCouncil(false);
+    }
+
+    const clickFixingTableHandler = () => {
+        setWantHome(false);
+        setWantAbout(false);
+        setWantSchedule(false);
+        setWantMatrix(false);
+        setWantWind(false);
+        setWantAdditional(false);
+        setWantFixingTable(true);
         setWantCouncil(false);
     }
 
@@ -99,6 +119,7 @@ const Nav = () => {
         setWantMatrix(false);
         setWantWind(false);
         setWantAdditional(false);
+        setWantFixingTable(false);
         setWantCouncil(true);
     }
 
@@ -113,8 +134,10 @@ const Nav = () => {
                     matrix={clickMatrixHandler}
                     wind={clickWindHandler}
                     additional={clickAdditionalHandler}
+                    fixingTable={clickFixingTableHandler}
                     council={clickCouncilHandler}
                     />
+                    <h5 className="mt-20 h4 warning">Warning: Site Is Not To Be Used For Commercial Use.</h5>
                 </header>
                 {wantHome && <Home/>}
                 {wantAbout && <About/>}
@@ -122,6 +145,7 @@ const Nav = () => {
                 {wantMatrix && <RiskMatrix/>}
                 {wantWind && <WindZone/>}
                 {wantAdditional && <Additional/>}
+                {wantFixingTable && <FixingTablePage/>}
                 {wantCouncil && <Council/>}
         </div>
 

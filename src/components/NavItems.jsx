@@ -27,6 +27,10 @@ const NavItems = (props) => {
         props.additional();
     }
 
+    const fixingTableHandler = () => {
+        props.fixingTable();
+    }
+
     const councilHandler = () => {
         props.council();
     }
@@ -38,7 +42,8 @@ const NavItems = (props) => {
                 <li className="nav__li" onClick={scheduleHandler}><a className="nav__item">SCHEDULE METHOD</a></li>
                 <li className="nav__li" onClick={matrixHandler}><a className="nav__item">RISK MATRIX</a></li>
                 <li className="nav__li" onClick={windHandler}><a className="nav__item">WIND ZONE</a></li>
-                <li className="nav__li" onClick={additionalHandler}><a className="nav__item">ADDITIONAL</a></li> 
+                <li className="nav__li" onClick={additionalHandler}><a className="nav__item">ADDITIONAL</a></li>
+                <li className="nav__li" onClick={fixingTableHandler}><a className="nav__item">FIXING TABLES</a></li> 
                 <li className="nav__li" onClick={councilHandler}><a className="nav__item">COUNCIL</a></li> 
             </ul>
     )
