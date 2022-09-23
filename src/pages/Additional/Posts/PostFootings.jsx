@@ -55,19 +55,19 @@ const PostFootings = () => {
 
     return (
         <div>
-            <h4 className="h5 pl-10 fw-900 black">Post Concrete Footings</h4>
+            <h4 className="h5 pl-10 dt-blue fw-800">Post Concrete Footings</h4>
             <CardSmallalt>
                 <div onChange={pcfHandler}>
                     <div className="flex-row  mb-20">
-                        <p className="body black">Roof Type</p>
-                        <select className="select-sm label dark-gray" id="pcfRoofWeight">
+                        <p className="body dt-gray">Roof Type</p>
+                        <select className="select-sm label" id="pcfRoofWeight">
                             <option value="light">Light</option>
                             <option value="heavy">Heavy</option>
                         </select>
                     </div>
                     <div className="flex-row mb-20">
-                        <p className="body black">Wind Zone</p>
-                        <select className="select-sm label dark-gray" id="pcfWindZone">
+                        <p className="body dt-gray">Wind Zone</p>
+                        <select className="select-sm label" id="pcfWindZone">
                             <option value="low">Low</option>
                             <option value="medium">Medium</option>
                             <option value="high">High</option>
@@ -76,8 +76,8 @@ const PostFootings = () => {
                         </select>
                     </div>
                     <div className="flex-row mb-20">
-                        <p className="body black">Area of supported roof</p>
-                        <select className="select-sm label dark-gray" id="pcfRoofSupport">
+                        <p className="body dt-gray">Area of supported roof</p>
+                        <select className="select-sm label" id="pcfRoofSupport">
                             <option value="1">1m²</option>
                             <option value="2">2m²</option>
                             <option value="4">4m²</option>
@@ -90,7 +90,7 @@ const PostFootings = () => {
                 </div>
 
                 <div className="mb-20 mt-30">
-                    <h5 className="h5-0mg fw-900 black mb-10">Volume of Concrete: <span className="h5-0mg fw-900 bright-blue mb-10">{volumeOfConcrete}m³</span> </h5>
+                    <h5 className="h5-0mg dt-white fw-800 mb-10">Volume of Concrete: <span className="result-text_md dt-blue fw-800  mb-10">{volumeOfConcrete}m³</span> </h5>
                 </div>
             </CardSmallalt>
         </div>

@@ -36,7 +36,7 @@ const NavItems = (props) => {
     }
 
     return (
-            <ul className="nav__ul black">
+            <ul className="nav__ul">
                 <li className="nav__li" onClick={homeHandler}><a className="nav__item">HOME</a></li>
                 <li className="nav__li" onClick={aboutHandler}><a className="nav__item">ABOUT</a></li>
                 <li className="nav__li" onClick={scheduleHandler}><a className="nav__item">SCHEDULE METHOD</a></li>

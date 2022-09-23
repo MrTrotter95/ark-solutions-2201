@@ -2,33 +2,28 @@ import React from "react";
 import CardSmall from "../../components/CardSmall";
 import './WindZone.css';
 
-import questionMark from "../../assets/images/icons/question-mark-primary.png";
+import questionMark from "../../assets/images/icons/question-mark-green.png";
 import WindRegionImg from "../../assets/images/windZoneImages/windRegions.jpg";
 import groundRoughnessImg from "../../assets/images/windZoneImages/groundRoughness.jpg";
 import siteExposureImg from "../../assets/images/windZoneImages/siteExposure.jpg";
 import topographyImg from "../../assets/images/windZoneImages/topographicClass.jpg";
 
 const WindZone = () => {
-    const print = () => {
-        window.print();
-    }
-
-
   return (
     <div className="container-sm" style={{marginTop: 75}}>
-      <h4 className="h5 fw-900 black">Wind Zone Determination</h4>
+      <h4 className="h5 dt-blue fw-800">Wind Zone Determination</h4>
       <CardSmall>
         <table className="table-sm" onChange={windZoneCalculation}>
           <tbody className="table-sm">
             <tr className="table-row">
               <td>
-                <p className="body dark-gray">Wind Region</p>
+                <p className="body dt-gray">Wind Region</p>
               </td>
               <td>
                 <img className="question-mark-primary" src={questionMark} alt="question mark" onClick={windRegionImgOpen} />
               </td>
               <td className="text-end">
-                <select className="select-sm label dark-gray" name="windRegion" id="windRegion">
+                <select className="select-sm label" name="windRegion" id="windRegion">
                   <option value="A">A</option>
                   <option value="W">W</option>
                 </select>
@@ -36,10 +31,10 @@ const WindZone = () => {
             </tr>
 
             <tr className="table-row">
-              <td><p className="body dark-gray">Lee Zone</p></td>
+              <td><p className="body dt-gray">Lee Zone</p></td>
               <td></td>
               <td className="text-end">         
-                <select className="select-sm label dark-gray" name="leeZone" id="leeZone">
+                <select className="select-sm label" name="leeZone" id="leeZone">
                   <option value="No">No</option>
                   <option value="Yes">Yes</option>
                 </select>
@@ -47,12 +42,12 @@ const WindZone = () => {
             </tr>
 
             <tr className="table-row">
-              <td><p className="body dark-gray">Ground Roughness</p></td>
+              <td><p className="body dt-gray">Ground Roughness</p></td>
               <td>
                 <img className="question-mark-primary" src={questionMark} alt="question mark" onClick={groundRoughnessImgOpen}/>
                 </td>
               <td className="text-end">         
-                <select className="select-sm label dark-gray" name="groundRoughness" id="groundRoughness">
+                <select className="select-sm label" name="groundRoughness" id="groundRoughness">
                   <option value="Urban">Urban</option>
                   <option value="Open">Open</option>
                 </select>
@@ -60,10 +55,10 @@ const WindZone = () => {
             </tr>
 
             <tr className="table-row">
-              <td><p className="body dark-gray">Site Exposure</p></td>
+              <td><p className="body dt-gray">Site Exposure</p></td>
               <td><img className="question-mark-primary" src={questionMark} alt="question mark" onClick={siteExposureImgOpen} /></td>
               <td className="text-end">         
-                <select className="select-sm label dark-gray" name="siteExposure" id="siteExposure">
+                <select className="select-sm label" name="siteExposure" id="siteExposure">
                   <option value="Sheltered">Sheltered</option>
                   <option value="Exposed">Exposed</option>
                 </select>
@@ -71,10 +66,10 @@ const WindZone = () => {
             </tr>
 
             <tr className="table-row">
-              <td><p className="body dark-gray">Topography</p></td>
+              <td><p className="body dt-gray">Topography</p></td>
               <td><img className="question-mark-primary" src={questionMark} alt="question mark" onClick={topographicImgOpen} /></td>
               <td className="text-end">         
-                <select className="select-sm label dark-gray" name="topography" id="topography">
+                <select className="select-sm label" name="topography" id="topography">
                   <option value="T1">T1</option>
                   <option value="T2">T2</option>
                   <option value="T3">T3</option>
@@ -84,18 +79,15 @@ const WindZone = () => {
             </tr>
 
             <tr className="table-row">
-              <td><p className="h5-0mg fw-900 black">Result</p></td>
+              <td><p className="h5-0mg dt-white fw-800">Result</p></td>
               <td></td>
               <td>
-                <h5 className="h5-0mg bright-blue fw-900 windZoneResult text-center">Low</h5>
+                <h5 className="result-text_md ml-0 fw-800 windZoneResult text-center dt-blue">Low</h5>
               </td>
             </tr>
           </tbody>
         </table>
       </CardSmall>
-      <div className="button-container">
-        <button className="primary-button label" onClick={print}>Save To PDF</button>
-      </div>
 
       <div className="windRegionImageParentContainer" onClick={windRegionImgClose}>
         <div className="windRegionImageChildContainer">

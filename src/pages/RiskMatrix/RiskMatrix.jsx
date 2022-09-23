@@ -69,24 +69,19 @@ const RiskMatrix = () => {
         }
     }
 
-    const print = () => {
-        window.print();
-    }
-
     return(
         <div className="container-lg flex-wrap">
-            <h3 className="h2 fw-900 black">Moisture Risk Matrix</h3>
-                <ClientInfo/>
+            <h3 className="h2 dt-white fw-900">Moisture Risk Matrix</h3>
 
             <div className="container__risk-matrix" onChange={ResultHandler}>
-                <h5 className="h5 fw-900 black">House Details</h5>
+                <h5 className="h5 dt-blue fw-800">House Details</h5>
                 <CardLarge>
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label fw-800 input-label">Wind Zone</p>
-                            <p className="label fw-800 secondary-pink input-label" id="windRegionText">Score: {windScore}</p>
+                            <p className="label dt-white fw-700 input-label">Wind Zone</p>
+                            <p className="label fw-800 dt-green input-label" id="windRegionText">Score: {windScore}</p>
                         </div>
-                        <select className="select-lg label dark-gray" name="wind" id="wind" >
+                        <select className="select-lg label" name="wind" id="wind" >
                             <option value="0">Low - NZS 3604 limit 32m/s</option>
                             <option value="0">Medium - NZS 3604 Limit 37m/s</option>
                             <option value="1">High - NZS 3604 limit 44m/s</option>
@@ -96,10 +91,10 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label fw-800 input-label">Number Of Storeys</p>
-                            <p className="label fw-800 secondary-pink input-label" id="storeysText">Score: {storeysScore}</p>
+                            <p className="label dt-white fw-700 input-label">Number Of Storeys</p>
+                            <p className="label fw-800 dt-green input-label" id="storeysText">Score: {storeysScore}</p>
                         </div>
-                        <select className="select-lg label dark-gray" name="storeys" id="storeys">
+                        <select className="select-lg label" name="storeys" id="storeys">
                             <option value="0">1 storey</option>
                             <option value="1">2 storeys in part</option>
                             <option value="2">2 storeys</option>
@@ -109,10 +104,10 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label fw-800 input-label">Roof/Wall Intersection Design</p>
-                            <p className="label fw-800 secondary-pink input-label" id="intersectionText">Score: {intersectionScore}</p>
+                            <p className="label dt-white fw-700 input-label">Roof/Wall Intersection Design</p>
+                            <p className="label fw-800 dt-green input-label" id="intersectionText">Score: {intersectionScore}</p>
                         </div>
-                        <select className="select-lg label dark-gray" name="intersection" id="intersection">
+                        <select className="select-lg label" name="intersection" id="intersection">
                             <option value="0">Roof-to-wall intersection fully protected</option>
                             <option value="1">Roof-to-wall intersection partially exposed</option>
                             <option value="3">Roof-to-wall intersection fully exposed</option>
@@ -122,10 +117,10 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label fw-800 input-label">Eaves Width</p>
-                            <p className="label fw-800 secondary-pink input-label" id="eavesText">Score: {eavesScore}</p>
+                            <p className="label dt-white fw-700 input-label">Eaves Width</p>
+                            <p className="label fw-800 dt-green input-label" id="eavesText">Score: {eavesScore}</p>
                         </div>
-                        <select className="select-max label dark-gray" name="eaves" id="eaves">
+                        <select className="select-max label" name="eaves" id="eaves">
                             <option value="0">Greater than 600mm for single storey</option>
                             <option value="1">451-600mm for single storey, or over 600mm for two storey</option>
                             <option value="2">101-450mm for single storey, or over 451-600mm for two storey, or greater than 600mm above two storey</option>
@@ -135,10 +130,10 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label fw-800 input-label">Envelope Complexity</p>
-                            <p className="label fw-800 pink input-label" id="envelopeText">Score: {envelopeScore}</p>
+                            <p className="label dt-white fw-700 input-label">Envelope Complexity</p>
+                            <p className="label fw-800 dt-green input-label" id="envelopeText">Score: {envelopeScore}</p>
                         </div>
-                        <select className="select-max label dark-gray" name="envelope" id="envelope">
+                        <select className="select-max label" name="envelope" id="envelope">
                             <option value="0">Simple rectangular, L, T or boomerang shape, with single cladding type</option>
                             <option value="1">Moderately complex, angular or curved shapes (eg, Y or arrowhead) with no more than two cladding types</option>
                             <option value="3">Complex, angular or curved shapes (eg, Y or arrowhead) shapes with multiple cladding types</option>
@@ -148,10 +143,10 @@ const RiskMatrix = () => {
 
                     <div className="risk-matrix__select-containers">
                         <div className="flex-row">
-                            <p className="label fw-800 input-label">Deck Design</p>
-                            <p className="label fw-800 secondary-pink input-label" id="deckText">Score: {deckScore}</p>
+                            <p className="label dt-white fw-700 input-label">Deck Design</p>
+                            <p className="label fw-800 dt-green input-label" id="deckText">Score: {deckScore}</p>
                         </div>
-                        <select className="select-lg label dark-gray" name="deck" id="deck">
+                        <select className="select-lg label" name="deck" id="deck">
                             <option value="0">None or, timber slat deck or porch at ground-floor level</option>
                             <option value="2">Fully covered in plan by roof, or timber slat deck attached at first- or second-floor level</option>
                             <option value="4">Enclosed deck exposed in plan or cantilevered at first-floor level</option>
@@ -162,22 +157,22 @@ const RiskMatrix = () => {
             </div>
 
             <div className="container-md print-margin">
-                <h5 className="h5 fw-900 black">Result</h5>
+                <h5 className="h5 dt-blue fw-800">Result</h5>
                 <CardMedium>
                     <div className="flex">
-                        <h3 className="h3-0mg bright-blue fw-800" id="integerResult">{integerScore}</h3>
-                        <p className="body fw-800 black" id="textResult">{textScore}</p>
+                        <h3 className="result-text_lg dt-blue fw-800" id="integerResult">{integerScore}</h3>
+                        <p className="body dt-white fw-800" id="textResult">{textScore}</p>
                     </div>
                 </CardMedium>
             </div>
 
             {warningBox && 
-            <div className="container-lg" id="warningBox">
+            <div id="warningBox">
                 <h5 className="h4 warning">Warning: Score is over 20</h5>
                 <CardLarge>
-                    <p className="body dark-gray">A)  Redesign the building to achieve a lower score, or</p>
-                    <p className="body dark-gray">B) Specific design</p>
-                    <ul className="body dark-gray">
+                    <p className="body dt-white">A)  Redesign the building to achieve a lower score, or</p>
+                    <p className="body dt-white">B) Specific design</p>
+                    <ul className="body dt-white">
                         <li>The design may need changing to reduce the risk.</li>
                         <li>The building consent authority may require more comprehensive 
                             details and documentation providing evidence of weathertightness.</li>
@@ -190,89 +185,85 @@ const RiskMatrix = () => {
             
 
             <div className="container-sm">
-                <h4 className="h5 fw-900 black">Direct Fixed</h4>
+                <h4 className="h5 dt-blue fw-800">Direct Fixed</h4>
                 <CardSmall>
-                    <p className="label bold secondary-black">Direct fixed to framing</p>
+                    <p className="label dt-white fw-700 secondary">Direct fixed to framing</p>
                     <div className="flex allowed-cladding__top">
                         <img src={low} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Timber weatherboards - all types</p>
+                        <p className="body dt-gray">Timber weatherboards - all types</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={medium} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Timber weatherboard - bevel backed</p>
+                        <p className="body dt-gray">Timber weatherboard - bevel backed</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={low} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Fibre cement weatherboards</p>
+                        <p className="body dt-gray">Fibre cement weatherboards</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={low} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Vertical profiled metal - corrugated and symmetrical trapezoidal</p>
+                        <p className="body dt-gray">Vertical profiled metal - corrugated and symmetrical trapezoidal</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Vertical profiled metal - corrugated only</p>
+                        <p className="body dt-gray">Vertical profiled metal - corrugated only</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={medium} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Vertical timber board and batten</p>
+                        <p className="body dt-gray">Vertical timber board and batten</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={low} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Fibre cement sheet jointed finish</p>
+                        <p className="body dt-gray">Fibre cement sheet jointed finish</p>
                     </div>
                     <div className="flex">
                         <img src={low} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Plywood sheet</p>
+                        <p className="body dt-gray">Plywood sheet</p>
                     </div>
                 </CardSmall>
             </div>
 
             <div className="container-sm">
-            <h4 className="h5 fw-900 black">Over Cavity</h4>
+            <h4 className="h5 dt-blue fw-800">Over Cavity</h4>
                 <CardSmall>
-                    <p className="label bold secondary-black">Over nominal 20mm drained cavity</p>
+                    <p className="label dt-white fw-700 secondary">Over nominal 20mm drained cavity</p>
                     <div className="flex allowed-cladding__top">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Masonry Veneer</p>
+                        <p className="body dt-gray">Masonry Veneer</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Stucco</p>
+                        <p className="body dt-gray">Stucco</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Horizontal profiled meltal (corrugated and trapezoidal only</p>
+                        <p className="body dt-gray">Horizontal profiled meltal (corrugated and trapezoidal only</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Fibre cement sheet - flush & jointed finish</p>
+                        <p className="body dt-gray">Fibre cement sheet - flush & jointed finish</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">EIFS</p>
+                        <p className="body dt-gray">EIFS</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Rusticated weatherboards</p>
+                        <p className="body dt-gray">Rusticated weatherboards</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Fibre cement weatherboards</p>
+                        <p className="body dt-gray">Fibre cement weatherboards</p>
                     </div>
                     <div className="flex allowed-cladding">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Plywood sheet</p>
+                        <p className="body dt-gray">Plywood sheet</p>
                     </div>
                     <div className="flex">
                         <img src={high} className="tick-cross" alt="tick or a cross"></img>
-                        <p className="body dark-gray">Bevel-back weatherboards</p>
+                        <p className="body dt-gray">Bevel-back weatherboards</p>
                     </div>
                 </CardSmall>
-            </div>
-
-            <div className="button-container">
-            <button className="primary-button label" onClick={print}>Save To PDF</button>
             </div>
         </div>
     )

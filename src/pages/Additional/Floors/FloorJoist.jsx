@@ -54,19 +54,19 @@ const FloorJoist = () => {
 
     return (
         <div>  
-            <h4 className="h5 fw-900 black pl-10">Floor Joists SG8</h4>
+            <h4 className="h5 dt-blue fw-800 pl-10">Floor Joists SG8</h4>
             <CardSmallalt>
                 <div onChange={JoistHandler}>
                     <div className="flex-row">
-                        <p className="body black">Floor Load</p>
-                        <select className="select-sm label dark-gray" id="floorLoad">
+                        <p className="body dt-gray">Floor Load</p>
+                        <select className="select-sm label" id="floorLoad">
                             <option value="1.5">1.5kPa</option>
                             <option value="2.0">2.0kPa</option>
                         </select>
                     </div>
                     <div className="flex-row mt-20">
-                        <p className="body black">Joist Size</p>
-                        <select className="select-sm label dark-gray" id="joistSize">
+                        <p className="body dt-gray">Joist Size</p>
+                        <select className="select-sm label" id="joistSize">
                             <option value="1">90x45</option>
                             <option value="2">140x35</option>
                             <option value="3">140x45</option>
@@ -78,29 +78,30 @@ const FloorJoist = () => {
                 </div>
 
                 <div className="mb-20 mt-30">
-                <h5 className="h5-0mg fw-900 black mb-10">Available Options</h5>
-                <p className="label black mb-10">Maximum span of joists(m) at a maximum spacing(mm) of:</p>
+                <h5 className="h5-0mg dt-white fw-800 mb-10">Available Options</h5>
+                <p className="label dt-gray mb-10">Maximum span of joists(m) at a maximum spacing(mm) of:</p>
                     <table className="table-sm text-center">
                         <thead>
                             <tr>
-                                <th><p className="label__window fw-800">Centres</p></th>
-                                <th><p className="label__window fw-800">400mm</p></th>
-                                <th><p className="label__window fw-800">600mm</p></th>
-                                <th><p className="label__window fw-800">450mm</p></th>
+                                <th><p className="label__window dt-gray fw-700">Centres</p></th>
+                                <th><p className="label__window dt-gray fw-700">400mm</p></th>
+                                <th><p className="label__window dt-gray fw-700">600mm</p></th>
+                                <th><p className="label__window dt-gray fw-700">450mm</p></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><p className="label__window fw-800">Max span</p></td>
-                                <td><p className="body bright-blue fw-800">{fourHundredCrs}m</p></td>
-                                <td><p className="body bright-blue fw-800">{fourFiftyCrs}m</p></td>
-                                <td><p className="body bright-blue fw-800">{sixHundredCrs}m</p></td>
+                                <td><p className="label__window dt-white fw-700">Max span</p></td>
+                                <td><p className="result-text_sm dt-blue fw-700">{fourHundredCrs}m</p></td>
+                                <td><p className="result-text_sm dt-blue fw-700">{fourFiftyCrs}m</p></td>
+                                <td><p className="result-text_sm dt-blue fw-700">{sixHundredCrs}m</p></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p className="label black">Spans may be increased by 10% for joists
+                <p className="label-bold dt-white fw-700 mt-20">Note:</p>
+                <p className="label dt-gray mt-10">Spans may be increased by 10% for joists
                 continuous over 2 or more spans.</p>
             </CardSmallalt>
         </div>

@@ -26,38 +26,38 @@ const PermeableSurface = () => {
 
     return(
         <div>
-            <h4 className="h5 fw-900 black pl-20">Permeable Surface</h4>
+            <h4 className="h5 dt-blue fw-900 pl-20">Permeable Surface</h4>
             <CardSmallalt>
                 <table className="table-sm" onChange={PermeableHandler}>
                   <tbody>
                     <tr className="table-row">
-                        <td><p className="body dark-gray">Site Area (m²)</p></td>
+                        <td><p className="body dt-gray">Site Area (m²)</p></td>
                         <td><input type="number" className="input-sm label " id="siteArea"/></td>
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body dark-gray">Floor Area (m²)</p></td>
+                        <td><p className="body dt-gray">Floor Area (m²)</p></td>
                         <td><input type="number" className="input-sm label " id="floorArea"/></td>
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body dark-gray">Impervious Areas (m²)</p></td>
+                        <td><p className="body dt-gray">Impervious Areas (m²)</p></td>
                         <td><input type="number" className="input-sm label" id="imperviousArea"/></td>
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body fw-900 black">Total Impervious</p></td>
-                        <td><h5 className="h5-0mg bright-blue fw-800 text-center " id="permeableResultOne">{areaImperv}m²</h5></td>
+                        <td><p className="body-bold dt-white fw-700">Total Impervious</p></td>
+                        <td><h5 className="result-text_sm dt-blue ml-0 fw-700 text-center " id="permeableResultOne">{areaImperv}m²</h5></td>
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body fw-900 black">Total Permeable</p></td>
-                        <td><h5 className="h5-0mg bright-blue fw-800 text-center " id="permeableResultTwo">{areaPerm}m²</h5></td>
+                        <td><p className="body-bold dt-white fw-700">Total Permeable</p></td>
+                        <td><h5 className="result-text_sm dt-blue ml-0 fw-700 text-center " id="permeableResultTwo">{areaPerm}m²</h5></td>
                     </tr>
 
                     <tr className="table-row">
-                        <td><p className="body fw-900 black">Total Permeable</p></td>
-                        <td><h5 className="h5-0mg bright-blue fw-800 text-center " id="permeableResultThree">{percentPerm}%</h5></td>
+                        <td><p className="body-bold dt-white fw-700">Total Permeable</p></td>
+                        <td><h5 className="result-text_sm dt-blue ml-0 fw-700 text-center " id="permeableResultThree">{percentPerm}%</h5></td>
                     </tr>
                   </tbody>
                 </table>

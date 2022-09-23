@@ -49,7 +49,7 @@ const WindowRowOne = (props) => {
             <td><input type="text" defaultValue={enteredjoineryId} onChange={joineryIdHandler} className="input-sm__window label__window "/></td>
             <td><input type="number" defaultValue={enteredHeight} onChange={heightChangeHandler} className="input-sm__window label__window " id="rowHeight"/></td>
             <td><input type="number" defaultValue={enteredWidth} onChange={widthChangeHandler} className="input-sm__window label__window " id="rowWidth" /></td>
-            <td><h5 className="text-center h5-0mg bright-blue rowAreaResult" id="rowArea">{windowArea}</h5></td>
+            <td><h5 className="text-center result-text_md dt-blue rowAreaResult" id="rowArea">{windowArea}</h5></td>
         </tr>
     )
 }

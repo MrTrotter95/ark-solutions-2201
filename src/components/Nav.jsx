@@ -126,7 +126,7 @@ const Nav = () => {
     return(
         <div className="container-entry">
                 <header className="header flex-column">
-                    <h3 className="nav__hero-text black">ARK SOLUTIONS</h3>
+                    <h3 className="nav__hero-text">ARK SOLUTIONS</h3>
                     <NavItems 
                     home={clickHomeHandler}
                     about={clickAboutHandler} 

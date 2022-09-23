@@ -1,5 +1,5 @@
 .card-large {
-    background-color: white;
+    background-color: var(--dark-card);
     width: 360px;
     margin: 10px auto 75px auto;
     padding: 30px 30px;

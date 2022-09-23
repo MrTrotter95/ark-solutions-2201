@@ -6,7 +6,7 @@ const ConnectionToPost = () => {
 
     const ctpArr = [
         [
-            ["roof",         1,   2,   4,    6,    8,   10,   12],
+            ["roof area ->", 1,   2,   4,    6,    8,   10,   12],
             ["extra-high", 2.5, 4.9, 9.6, 14.4, 19.2, 24.0, 28.8],
             ["very-high",  2.0, 4.0, 7.9, 11.9, 15.8, 19.8, 23.8],
             ["high",       1.5, 2.9, 5.9,  8.8, 11.8, 14.7, 17.7],
@@ -54,19 +54,19 @@ const ConnectionToPost = () => {
 
     return (
         <div>
-            <h4 className="h5 pl-10 fw-900 black" style={{width: 320}}>Connections To Posts & Beams(kN)</h4>
+            <h4 className="h5 pl-10 dt-blue fw-800" style={{width: 320}}>Connections To Posts & Beams(kN)</h4>
             <CardSmallalt>
                 <div onChange={ctpHandler}>
                     <div className="flex-row  mb-20">
-                        <p className="body black">Roof Type</p>
-                        <select className="select-sm label dark-gray" id="ctpRoofWeight">
+                        <p className="body dt-gray">Roof Type</p>
+                        <select className="select-sm label" id="ctpRoofWeight">
                             <option value="light">Light</option>
                             <option value="heavy">Heavy</option>
                         </select>
                     </div>
                     <div className="flex-row mb-20">
-                        <p className="body black">Wind Zone</p>
-                        <select className="select-sm label dark-gray" id="ctpWindZone">
+                        <p className="body dt-gray">Wind Zone</p>
+                        <select className="select-sm label" id="ctpWindZone">
                             <option value="low">Low</option>
                             <option value="medium">Medium</option>
                             <option value="high">High</option>
@@ -75,8 +75,8 @@ const ConnectionToPost = () => {
                         </select>
                     </div>
                     <div className="flex-row mb-20">
-                        <p className="body black">Area of supported roof</p>
-                        <select className="select-sm label dark-gray" id="ctpRoofSupport">
+                        <p className="body dt-gray">Area of supported roof</p>
+                        <select className="select-sm label" id="ctpRoofSupport">
                             <option value="1">1m²</option>
                             <option value="2">2m²</option>
                             <option value="4">4m²</option>
@@ -89,7 +89,7 @@ const ConnectionToPost = () => {
                 </div>
 
                 <div className="mb-20 mt-30">
-                    <h5 className="h5-0mg fw-900 black mb-10">Capacity of post and beam connections: <span className="h5-0mg fw-900 bright-blue mb-10">{connectionStrength}kN</span> </h5>
+                    <h5 className="h5-0mg dt-white fw-800 mb-10">Capacity of post and beam connections: <span className="result-text_md dt-blue fw-800  mb-10">{connectionStrength}kN</span> </h5>
                 </div>
             </CardSmallalt>
         </div>
