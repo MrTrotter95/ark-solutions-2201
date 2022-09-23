@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/ark-solutions-2201/static/css/main.f1ef0d10.css",
-    "main.js": "/ark-solutions-2201/static/js/main.cfe42324.js",
+    "main.css": "/ark-solutions-2201/static/css/main.929db12c.css",
+    "main.js": "/ark-solutions-2201/static/js/main.4d6c0f98.js",
     "static/js/787.300a729d.chunk.js": "/ark-solutions-2201/static/js/787.300a729d.chunk.js",
     "static/media/topographicClass.jpg": "/ark-solutions-2201/static/media/topographicClass.ceb53ff5e6c2f868b6b0.jpg",
     "static/media/windRegions.jpg": "/ark-solutions-2201/static/media/windRegions.b06d480410e98342c8e2.jpg",
     "static/media/groundRoughness.jpg": "/ark-solutions-2201/static/media/groundRoughness.ad63390d91385c043bc7.jpg",
     "static/media/siteExposure.jpg": "/ark-solutions-2201/static/media/siteExposure.c868b6ce5234c5e44687.jpg",
+    "static/media/question-mark-green.png": "/ark-solutions-2201/static/media/question-mark-green.2b486c3403858fb10193.png",
     "static/media/tick.png": "/ark-solutions-2201/static/media/tick.af2a744f043c0183e3bc.png",
     "static/media/cross.png": "/ark-solutions-2201/static/media/cross.6113071412906ba1bb21.png",
     "index.html": "/ark-solutions-2201/index.html",
     "static/media/add.svg": "/ark-solutions-2201/static/media/add.621712907d66bd6876fa7af4e02614a0.svg",
     "static/media/remove.svg": "/ark-solutions-2201/static/media/remove.91ed902e69d1e254f0a82ecc7b4a7512.svg",
-    "main.f1ef0d10.css.map": "/ark-solutions-2201/static/css/main.f1ef0d10.css.map",
-    "main.cfe42324.js.map": "/ark-solutions-2201/static/js/main.cfe42324.js.map",
+    "main.929db12c.css.map": "/ark-solutions-2201/static/css/main.929db12c.css.map",
+    "main.4d6c0f98.js.map": "/ark-solutions-2201/static/js/main.4d6c0f98.js.map",
     "787.300a729d.chunk.js.map": "/ark-solutions-2201/static/js/787.300a729d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1ef0d10.css",
-    "static/js/main.cfe42324.js"
+    "static/css/main.929db12c.css",
+    "static/js/main.4d6c0f98.js"
   ]
 }
