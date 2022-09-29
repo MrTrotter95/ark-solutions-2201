@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ark-solutions-2201/static/css/main.4337c0a0.css",
-    "main.js": "/ark-solutions-2201/static/js/main.65e98970.js",
+    "main.css": "/ark-solutions-2201/static/css/main.8de6e368.css",
+    "main.js": "/ark-solutions-2201/static/js/main.04a7b21b.js",
     "static/js/787.300a729d.chunk.js": "/ark-solutions-2201/static/js/787.300a729d.chunk.js",
     "static/media/topographicClass.jpg": "/ark-solutions-2201/static/media/topographicClass.ceb53ff5e6c2f868b6b0.jpg",
     "static/media/windRegions.jpg": "/ark-solutions-2201/static/media/windRegions.b06d480410e98342c8e2.jpg",
@@ -13,12 +13,12 @@
     "index.html": "/ark-solutions-2201/index.html",
     "static/media/add.svg": "/ark-solutions-2201/static/media/add.621712907d66bd6876fa7af4e02614a0.svg",
     "static/media/remove.svg": "/ark-solutions-2201/static/media/remove.91ed902e69d1e254f0a82ecc7b4a7512.svg",
-    "main.4337c0a0.css.map": "/ark-solutions-2201/static/css/main.4337c0a0.css.map",
-    "main.65e98970.js.map": "/ark-solutions-2201/static/js/main.65e98970.js.map",
+    "main.8de6e368.css.map": "/ark-solutions-2201/static/css/main.8de6e368.css.map",
+    "main.04a7b21b.js.map": "/ark-solutions-2201/static/js/main.04a7b21b.js.map",
     "787.300a729d.chunk.js.map": "/ark-solutions-2201/static/js/787.300a729d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4337c0a0.css",
-    "static/js/main.65e98970.js"
+    "static/css/main.8de6e368.css",
+    "static/js/main.04a7b21b.js"
   ]
 }
