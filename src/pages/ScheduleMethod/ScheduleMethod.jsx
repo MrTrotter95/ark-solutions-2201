@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import TBodyOne from "./TBodyOne";
 import TBodyTwo from "./TBodyTwo";
 import CardSmall from "../../components/CardSmall";
-import ClientInfo from "../../components/ClientInfo";
 import './ScheduleMethod.css';
 
 import minus from "../../assets/images/icons/remove.svg";
@@ -172,22 +171,22 @@ const ScheduleMethod = () => {
 
     return(
         <div className="container-lg flex-wrap">
-            <h3 className="h2 dt-white fw-800">H1 Schedule Method</h3>
+            <h3 className="h2 fw-900">H1 Schedule Method</h3>
             <div className="container-sm">
-                <h4 className="h5 dt-blue fw-800">General Info</h4>
+                <h4 className="h5 blue fw-700">General Info</h4>
                 <CardSmall>
                     <table className="table-sm">
                         <tbody>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Wall Height (m)</p></td>
+                                <td><p className="body dark-gray">Wall Height (m)</p></td>
                                 <td><input type="number" className="input-sm label " onChange={wallheightHandler}/></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Total Perimeter (m)</p></td>
+                                <td><p className="body dark-gray">Total Perimeter (m)</p></td>
                                 <td><input type="number" className="input-sm label " onChange={totalPerimHandler}/></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">North Perimeter (m)</p></td>
+                                <td><p className="body dark-gray">North Perimeter (m)</p></td>
                                 <td><input type="number" className="input-sm label " onChange={northPerimHandler}/></td>
                             </tr>
                         </tbody>
@@ -195,22 +194,22 @@ const ScheduleMethod = () => {
                 </CardSmall>
             </div>
             <div className="container-sm">
-                <h4 className="h5 dt-blue fw-800">Means of compliance</h4>
+                <h4 className="h5 blue fw-700">Means of compliance</h4>
                 <CardSmall>
-                    <p className="body dt-gray">
+                    <p className="body dark-gray">
                     • A glazing area that is less than 30% of the total habitable wall area (m²) 
                     on the East, South, and West facing walls.</p>
-                    <p className="body dt-gray">
+                    <p className="body dark-gray">
                     • A glazing area that is less than 30% of the total habitable wall area (m²) 
                     on the North, East, South, and West facing walls.</p>
-                    <p className="body dt-gray">
+                    <p className="body dark-gray">
                     • Dwelling construction methods must comply with NZBC H1/AS1 to use the H1 
                     Schedule Method.</p>
                 </CardSmall>
             </div>
             <div className="container-sm">
                 <div className="flex-row">
-                    <h4 className="h5 dt-blue fw-800">Windows ( E,S,W )</h4>
+                    <h4 className="h5 blue fw-700">Windows ( E,S,W )</h4>
                     <div>
                         <img className="add-remove-icon" src={minus} onClick={removeRowOneHandler} alt="Remove"/>
                         <img className="add-remove-icon" src={add} onClick={addOneRowHandler} alt="Add"/>
@@ -220,18 +219,18 @@ const ScheduleMethod = () => {
                     <table className="table-sm">
                         <thead>
                             <tr>
-                                <th><p className="label__window dt-gray fw-700">Joinery ID</p></th>
-                                <th><p className="label__window dt-gray fw-700">Height</p></th>
-                                <th><p className="label__window dt-gray fw-700">Width</p></th>
-                                <th><p className="label__window dt-gray fw-700">Area</p></th>
+                                <th><p className="label__window fw-700">Joinery ID</p></th>
+                                <th><p className="label__window fw-700">Height</p></th>
+                                <th><p className="label__window fw-700">Width</p></th>
+                                <th><p className="label__window fw-700">Area</p></th>
                             </tr>
                         </thead>
                         <TBodyOne items={tableOneRows} onUpdateRowOne={updateRowOneHandler} />
                     </table>
 
-                    <div className="container__window-area">
-                        <p className="body dt-white fw-700">Total Area:</p>
-                        <h5 className="result-text_md dt-blue ml-30">{tableOneWindowArea}</h5>
+                    <div className="container__window-area pr-3">
+                        <p className="body fw-700">Total Area:</p>
+                        <h5 className="result-text_md blue ml-20">{tableOneWindowArea}</h5>
                     </div>
                     <div className="window-area__button">
                         <button onClick={calcWindowAreasOne} className="primary-button label">Calculate</button>
@@ -240,7 +239,7 @@ const ScheduleMethod = () => {
             </div>
             <div className="container-sm">
                 <div className="flex-row">
-                <h4 className="h5 dt-blue fw-800">Windows ( N )</h4>
+                <h4 className="h5 blue fw-700">Windows ( N )</h4>
                     <div>
                         <img className="add-remove-icon" src={minus} onClick={removeRowOneHandlerTwo} alt="Remove"/>
                         <img className="add-remove-icon" src={add} onClick={addOneRowHandlerTwo} alt="Add"/>
@@ -250,18 +249,18 @@ const ScheduleMethod = () => {
                 <table className="table-sm" id="table2">
                     <thead>
                         <tr className="table-row">
-                            <th><p className="label__window dt-gray fw-700">Joinery ID</p></th>
-                            <th><p className="label__window dt-gray fw-700">Height</p></th>
-                            <th><p className="label__window dt-gray fw-700">Width</p></th>
-                            <th><p className="label__window dt-gray fw-700">Area</p></th>
+                            <th><p className="label__window fw-700">Joinery ID</p></th>
+                            <th><p className="label__window fw-700">Height</p></th>
+                            <th><p className="label__window fw-700">Width</p></th>
+                            <th><p className="label__window fw-700">Area</p></th>
                         </tr>
                     </thead>
                     <TBodyTwo items={tableTwoRows} onUpdateRowTwo={updateRowTwoHandler} />
                 </table>
 
-                <div className="container__window-area">
-                        <p className="body dt-white fw-700">Total Area:</p>
-                        <h5 className="result-text_md dt-blue ml-30">{tableTwoWindowArea}</h5>
+                <div className="container__window-area pr-3">
+                        <p className="body fw-700">Total Area:</p>
+                        <h5 className="result-text_md blue ml-30">{tableTwoWindowArea}</h5>
                     </div>
                     <div className="window-area__button">
                         <button onClick={calcWindowAreasTwo} className="primary-button label">Calculate</button>
@@ -269,50 +268,50 @@ const ScheduleMethod = () => {
                 </CardSmall>
             </div>
             <div className="container-sm">
-                <h4 className="h5 dt-blue fw-800">Results ( E,S,W )</h4>
+                <h4 className="h5 blue fw-700">Results ( E,S,W )</h4>
                 <CardSmall>
                     <table className="table-sm">
                         <tbody>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Total Perimeter</p></td>
-                                <td><h5 className="h5 dt-white fw-700">{eswPerim}m</h5></td>
+                                <td><p className="body dark-gray">Total Perimeter</p></td>
+                                <td><h5 className="h5 fw-700">{eswPerim}m</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Wall Area</p></td>
-                                <td><h5 className="h5 dt-white fw-700">{eswWallArea}m²</h5></td>
+                                <td><p className="body dark-gray">Wall Area</p></td>
+                                <td><h5 className="h5 fw-700">{eswWallArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Total Glazing Area</p></td>
-                                <td><h5 className="h5 dt-white fw-700">{eswGlazingArea}m²</h5></td>
+                                <td><p className="body dark-gray">Total Glazing Area</p></td>
+                                <td><h5 className="h5 fw-700">{eswGlazingArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-gray dt-blue fw-700">Result</p></td>
-                                <td><h5 className="result-text_md dt-blue ml-30 fw-700">{eswPercent}%</h5></td>
+                                <td><p className="body blue fw-700">Result</p></td>
+                                <td><h5 className="result-text_md blue ml-30 fw-700">{eswPercent}%</h5></td>
                             </tr>
                         </tbody>
                     </table>
                 </CardSmall>
             </div>
             <div className="container-sm">
-                <h4 className="h5 dt-blue fw-800">Results ( N,E,S,W )</h4>
+                <h4 className="h5 blue fw-700">Results ( N,E,S,W )</h4>
                 <CardSmall>
                     <table className="table-sm">
                         <tbody>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Total Perimeter</p></td>
-                                <td><h5 className="h5 dt-white fw-700">{neswPerim}m</h5></td>
+                                <td><p className="body dark-gray">Total Perimeter</p></td>
+                                <td><h5 className="h5 fw-700">{neswPerim}m</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Wall Area</p></td>
-                                <td><h5 className="h5 dt-white fw-700">{neswWallArea}m²</h5></td>
+                                <td><p className="body dark-gray">Wall Area</p></td>
+                                <td><h5 className="h5 fw-700">{neswWallArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-gray">Total Glazing Area</p></td>
-                                <td><h5 className="h5 dt-white fw-700">{neswGlazingArea}m²</h5></td>
+                                <td><p className="body dark-gray">Total Glazing Area</p></td>
+                                <td><h5 className="h5 fw-700">{neswGlazingArea}m²</h5></td>
                             </tr>
                             <tr className="table-row">
-                                <td><p className="body dt-blue fw-700">Result</p></td>
-                                <td><h5 className="result-text_md dt-blue ml-30">{neswPercent}%</h5></td>
+                                <td><p className="body blue fw-700">Result</p></td>
+                                <td><h5 className="result-text_md blue ml-30">{neswPercent}%</h5></td>
                             </tr>
                         </tbody>
                     </table>

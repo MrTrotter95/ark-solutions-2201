@@ -132,50 +132,51 @@ const Bearers = () => {
 
     return (
         <div>   
-            <h4 className="h5 dt-blue pl-10 fw-800">Bearers SG8</h4>
+            <h4 className="h5 blue pl-10 fw-700">Bearers SG8</h4>
             <CardSmallalt>
                 <div onChange={bearerSizeHandler}>
                     <div className="flex-row">
-                        <p className="body dt-gray">Floor Load</p>
+                        <p className="body dark-gray">Floor Load</p>
                         <select className="select-sm label" id="bearerFloorLoad">
                             <option value="1">1.5kPa</option>
                             <option value="2">2.0kPa</option>
                         </select>
                     </div>
                     <div className="flex-row mt-20 mb-20">
-                        <p className="body dt-gray">Loaded Dimension* of bearer (m)</p>
+                        <p className="body dark-gray">Loaded Dimension* of bearer (m)</p>
                         <input type="number" className="input-md label" id="bearerLoadedDimension"></input>
                     </div>
                 </div>
+                <div className="mt-30">
+                    <h5 className="h5-0mg fw-700 mb-10">Available Options</h5>
+                    <table className="table-sm text-center">
+                            <thead>
+                                <tr>
+                                    <th><p className="label__window fw-700">Max Span</p></th>
+                                    <th><p className="label__window fw-700">Bearer Size</p></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p className="body-bold fw-700">1.30m</p></td>
+                                    <td><p className="result-text_sm blue fw-700">{firstBearerOpt}</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p className="body-bold fw-700">1.65m</p></td>
+                                    <td><p className="result-text_sm blue fw-700">{secondBearerOpt}</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p className="body-bold fw-700">2.0m</p></td>
+                                    <td><p className="result-text_sm blue fw-700">{thirdBearerOpt}</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-
-                <table className="table-sm text-center">
-                        <thead>
-                            <tr>
-                                <th><p className="label__window dt-gray fw-700">Max Span</p></th>
-                                <th><p className="label__window dt-gray fw-700">Bearer Size</p></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><p className="body-bold dt-white fw-700">1.30m</p></td>
-                                <td><p className="result-text_sm dt-blue fw-700">{firstBearerOpt}</p></td>
-                            </tr>
-                            <tr>
-                                <td><p className="body-bold dt-white fw-700">1.65m</p></td>
-                                <td><p className="result-text_sm dt-blue fw-700">{secondBearerOpt}</p></td>
-                            </tr>
-                            <tr>
-                                <td><p className="body-bold dt-white fw-700">2.0m</p></td>
-                                <td><p className="result-text_sm dt-blue fw-700">{thirdBearerOpt}</p></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                <p className="label-bold dt-white fw-700 mt-20">Note:</p>
-                <p className="label dt-gray mt-10">*For definition of loaded dimension see 1.3 of NZS3604:2011</p>
-                <p className="label dt-gray mt-10">Members 70mm and 90mm thick may be 
-                substitutedwith built-up members sized and nailed in accordance with 2.4.4.7</p>
+                    <p className="label-bold fw-700 mt-20">Note:</p>
+                    <p className="label dark-gray mt-10">*For definition of loaded dimension see 1.3 of NZS3604:2011</p>
+                    <p className="label dark-gray mt-10">Members 70mm and 90mm thick may be 
+                    substitutedwith built-up members sized and nailed in accordance with 2.4.4.7</p>
+                </div>
             </CardSmallalt>
         </div>
     )

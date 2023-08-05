@@ -10,7 +10,7 @@
     font-family: Plus Jakarta Sans;
     font-size: 30px;
     font-weight: 600;
-    color: var(--dark-theme-hero);
+    color: var(--black);
 }
 
 .hamburgerIcon {
@@ -37,7 +37,7 @@
 
 .nav__li {
     margin: 10px;
-    color: var(--dark-theme-nav);
+    color: var(--dark-gray);
 }
 
 .nav__item {

@@ -18,13 +18,13 @@
 }
 
 .input-sm__window {
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
+    background-color: var(--white);
+    color: var(--dark-gray);
     height: 38px;
     width: 65px;
     padding: 10px 10px 10px 15px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
 }
 

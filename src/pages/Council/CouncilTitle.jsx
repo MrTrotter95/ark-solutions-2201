@@ -9,7 +9,7 @@ const CouncilTitle = (props) => {
         <CardSmallalt>
             <div>
                 <div className="flex-row">
-                    <h3 className="h3-0mg black dt-gray fw-800">{props.name}</h3>
+                    <h3 className="h4-0mg fw-700">{props.name}</h3>
                 </div>           
                 <CouncilInfo
                 gis={props.gis}

@@ -61,7 +61,7 @@ const Data = [
 const Council = () => {
     return (
         <div className="container-xl">
-            <h3 className="h2 dt-white fw-900">Council Resources</h3>
+            <h3 className="h2 fw-900">Council Resources</h3>
             <div className="flex-wrap">
                 {Data.map((item) => (
                     <CouncilTitle

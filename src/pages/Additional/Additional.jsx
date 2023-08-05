@@ -22,20 +22,20 @@ const Additional = () => {
 
     return(
         <div className="container-xl">
-            <h3 className="h2 dt-white fw-900">Additional Calculators</h3>
+            <h3 className="h2 --dark-gray fw-900">Additional Calculators</h3>
             <div className="flex-wrap mb-100">
                 <PermeableSurface/>
                 <SiteCoverage/>
             </div>
 
-            <h3 className="h2 dt-white fw-900">Foundation & Floors</h3>
+            <h3 className="h2 --dark-gray fw-900">Foundation & Floors</h3>
             <div className="flex-wrap mb-100">
                 <Bearers/>
                 <Stringers/>
                 <FloorJoist/>
             </div>
 
-            <h3 className="h2 dt-white fw-900">Walls</h3>
+            <h3 className="h2 --dark-gray fw-900">Walls</h3>
             <div className="flex-wrap mb-100">
                 <LintelSingleOrTop/>
                 <LintelsRoofWall/>
@@ -44,25 +44,18 @@ const Additional = () => {
                 <LintelsFloor/>
             </div>
 
-            <h3 className="h2 dt-white fw-900">Posts</h3>
+            <h3 className="h2 --dark-gray fw-900">Posts</h3>
             <div className="flex-wrap mb-100">
                 <PostFootings/>
                 <ConnectionToPost/>
             </div>
 
-            <div>
-            <h5 className="mb-70 text-center h4 warning">Features below are under development and will not work.</h5>
-            </div>
-            <h3 className="h2 dt-white fw-900">Roof Framing</h3>
+            <h3 className="h2 --dark-gray fw-900">Roof Framing</h3>
             <div className="flex-wrap mb-100">
                 <Rafters/>
                 <RidgeBeams/>
                 <VerandahBeams/>
             </div>
-            {/* <div className="button-container">
-                <button className="primary-button label" onClick={print}>Save To PDF</button>
-            </div>
-            */}
         </div>
     )
 };

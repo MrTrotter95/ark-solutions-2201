@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    background-color: var(--dark-background);
+    background-color: #FBFBFB;
 }
 
 :root {
@@ -46,8 +46,18 @@ body {
     --dark-theme-primary-button: #238636;
     --dark-theme-secondary-button: #5ba3f9;
     --dark-theme-white: #f0f6fc;
+}
 
-    /*#30363d*/
+.blue {
+    color: #413DF7;
+}
+
+.dark-gray {
+    color: #4A4A4A;
+}
+
+.dark-gray {
+    color: #4A4A4A;
 }
 
 .dt-gray {
@@ -184,6 +194,10 @@ body {
     line-height: 37px;
 }
 
+.label-text-width_sm {
+    width: 150px;
+}
+
 .link {
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -251,7 +265,7 @@ body {
 
 /* ---------------------     START OF COLOURS     ---------------------  */
 .background{
-    color: var(--dark-background);
+    color: var(--background);
 }
 
 .pink {
@@ -394,6 +408,10 @@ body {
     padding-left: 20px;
 }
 
+.pr-3 {
+    padding-right: 3px;
+}
+
 .mb-0 {
     margin-bottom: 0;
 }
@@ -450,6 +468,14 @@ body {
     margin-left: 0px;
 }
 
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
 .ml-30 {
     margin-left: 30px;
 }
@@ -497,35 +523,52 @@ body {
     margin-bottom: 10px;
 }
 
+.table-md {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.table-md__head {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-md__data {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
 .select-sm {
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
+    background-color: var(--white);
+    color: var(--dark-gray);
     width: 130px;
+    height: 40px;
     padding: 10px 15px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
 }
 
 .select-md {
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
-    width: 170px;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    width: 130px;
+    height: 40px;
     padding: 10px 10px 10px 15px;
-    margin-left: 5px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
 }
 
 .select-lg {
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
+    background-color: var(--white);
+    color: var(--dark-gray);
     width: 320px;
     height: 55px;
     padding: 10px 15px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
     text-overflow: ellipsis;
     white-space:pre-wrap;
@@ -534,6 +577,7 @@ body {
 .select-overflow {
     text-overflow: ellipsis;
     white-space:pre-wrap;
+    padding-right: 0;
 }
 
 .select-height {
@@ -541,49 +585,51 @@ body {
 }
 
 .select-max {
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
+    background-color: var(--white);
+    color: var(--dark-gray);
     width: 320px;
     height: 73px;
     padding: 10px 15px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
     text-overflow: ellipsis;
     white-space:pre-wrap;
 }
 
 .select-lg:focus, .select-max:focus, .select-sm:focus, .select-md:focus {
-    border: 1px solid var(--bright-blue);
+    border: 1px solid var(--secondary-blue);
 }
 
 .input-sm { 
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
+    background-color: var(--white);
+    color: var(--dark-gray);
     width: 80px;
+    height: 40px;
     padding: 10px 15px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
 }
 
 .input-md { 
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
+    background-color: var(--white);
+    color: var(--dark-gray);
     width: 130px;
+    height: 40px;
     padding: 10px 15px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
 }
 
 .input-lg { 
-    background-color: var(--dark-background);
-    color: var(--dark-theme-body);
+    background-color: var(--white);
+    color: var(--dark-gray);
     min-width: 300px;
     padding: 10px 15px;
     outline: none;
-    border: 1px solid var(--dark-background);
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
 }
 

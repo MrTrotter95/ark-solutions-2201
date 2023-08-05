@@ -32,10 +32,10 @@ const Stringers = () => {
 
     return (
         <div>
-            <h4 className="h5 dt-blue pl-10 fw-800">Stringers SG8</h4>
+            <h4 className="h5 blue pl-10 fw-700">Stringers SG8</h4>
             <CardSmallalt>
                 <div className="flex-row">
-                    <p className="body dt-gray">Max Span Of Floor Joists</p>
+                    <p className="body dark-gray">Max Span Of Floor Joists</p>
                     <select className="select-sm label" id="joistSpan" onChange={StringerHandler}>
                         <option value="2">2.0m</option>
                         <option value="3">3.0m</option>
@@ -45,22 +45,22 @@ const Stringers = () => {
                     </select>
                 </div>
                 <div className="mt-30">
-                    <h5 className="h5-0mg dt-white fw-800 mb-10">Available Options</h5>
+                    <h5 className="h5-0mg fw-700 mb-10">Available Options</h5>
                     <table className="table-sm text-center">
                         <thead>
                             <tr>
-                                <th><p className="label__window dt-gray fw-700">Size Nominal (mm)</p></th>
-                                <th><p className="label__window dt-gray fw-700">Max M12 bolt spacing (mm)</p></th>
+                                <th><p className="label__window fw-700">Size Nominal (mm)</p></th>
+                                <th><p className="label__window fw-700">Max M12 bolt spacing (mm)</p></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><p className="result-text_sm dt-white fw-700">140x45</p></td>
-                                <td><p className="result-text_sm dt-blue fw-700">{oneFortyStr}</p></td>
+                                <td><p className="result-text_sm fw-700">140x45</p></td>
+                                <td><p className="result-text_sm blue fw-700">{oneFortyStr}</p></td>
                             </tr>
                             <tr>
-                                <td><p className="result-text_sm dt-white fw-700">190x45</p></td>
-                                <td><p className="result-text_sm dt-blue fw-700">{oneNinetyStr}</p></td>
+                                <td><p className="result-text_sm fw-700">190x45</p></td>
+                                <td><p className="result-text_sm blue fw-700">{oneNinetyStr}</p></td>
                             </tr>
                         </tbody>
                     </table>

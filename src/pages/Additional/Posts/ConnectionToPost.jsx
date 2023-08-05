@@ -54,18 +54,18 @@ const ConnectionToPost = () => {
 
     return (
         <div>
-            <h4 className="h5 pl-10 dt-blue fw-800" style={{width: 320}}>Connections To Posts & Beams(kN)</h4>
+            <h4 className="h5 pl-10 blue fw-700" style={{width: 320}}>Connections To Posts & Beams(kN)</h4>
             <CardSmallalt>
                 <div onChange={ctpHandler}>
                     <div className="flex-row  mb-20">
-                        <p className="body dt-gray">Roof Type</p>
+                        <p className="body dark-gray">Roof Type</p>
                         <select className="select-sm label" id="ctpRoofWeight">
                             <option value="light">Light</option>
                             <option value="heavy">Heavy</option>
                         </select>
                     </div>
                     <div className="flex-row mb-20">
-                        <p className="body dt-gray">Wind Zone</p>
+                        <p className="body dark-gray">Wind Zone</p>
                         <select className="select-sm label" id="ctpWindZone">
                             <option value="low">Low</option>
                             <option value="medium">Medium</option>
@@ -75,7 +75,7 @@ const ConnectionToPost = () => {
                         </select>
                     </div>
                     <div className="flex-row mb-20">
-                        <p className="body dt-gray">Area of supported roof</p>
+                        <p className="body dark-gray">Area of supported roof</p>
                         <select className="select-sm label" id="ctpRoofSupport">
                             <option value="1">1m²</option>
                             <option value="2">2m²</option>
@@ -89,7 +89,7 @@ const ConnectionToPost = () => {
                 </div>
 
                 <div className="mb-20 mt-30">
-                    <h5 className="h5-0mg dt-white fw-800 mb-10">Capacity of post and beam connections: <span className="result-text_md dt-blue fw-800  mb-10">{connectionStrength}kN</span> </h5>
+                    <h5 className="h5-0mg fw-700 mb-10">Capacity of post and beam connections: <span className="result-text_md blue fw-800 ml-10 mb-10">{connectionStrength}kN</span> </h5>
                 </div>
             </CardSmallalt>
         </div>

@@ -53,34 +53,34 @@ const LintelsWallFloor = () => {
 
     return (
         <div>
-            <h4 className="h5 pl-10 dt-blue fw-800" style={{width: 320}}>Lintels Supporting Wall & Floor SG8</h4>
+            <h4 className="h5 pl-10 blue fw-700" style={{width: 320}}>Lintels Supporting Wall & Floor SG8</h4>
             <CardSmallalt>
                 <div onChange={lintelSizeHandler}>
                     <div className="flex-row mb-20">
-                        <p className="body dt-gray">Wall Weight</p>
-                        <select className="select-md label select-overflow" id="wallWeight" style={{width: 140}}>
+                        <p className="body dark-gray ">Wall Weight</p>
+                        <select className="select-md label" id="wallWeight">
                             <option value="LW">Light Wall</option>
                             <option value="MW">Medium Wall</option>
                         </select>
                     </div>
                     <div className="flex-row mb-20">
-                        <p className="body dt-gray">Max Loaded Dimenion of Lintel (m)</p>
+                        <p className="body dark-gray label-text-width_sm">Max Loaded Dimenion of Lintel (m)</p>
                         <select className="select-md label">
                             <option value="3">3.0m</option>
                         </select>
                     </div>
                     <div className="flex-row">
-                        <p className="body dt-gray">Max Lintel Span (mm)</p>
+                        <p className="body dark-gray">Max Lintel Span (mm)</p>
                         <input type="number" className="input-md label" id="lintelSpan4"></input>
                     </div>
                 </div>
 
-                <div className="mb-20 mt-30 flex-row">
-                    <h5 className="h5-0mg dt-white fw-800 mb-10">Allowed Lintel Size: </h5>
-                    <h5 className="result-text_md dt-blue fw-800  mb-10">{lintelWallFloorSize}</h5>
+                <div className="mb-20 mt-30 flex">
+                    <h5 className="h5-0mg fw-700 mb-10">Allowed Lintel Size: </h5>
+                    <h5 className="result-text_md blue fw-800  mb-10">{lintelWallFloorSize}</h5>
                 </div>
-                <p className="label dt-white fw-700 mt-20">Note:</p>
-                <p className="label dt-gray mt-10">Members 70mm and 90mm thick may be 
+                <p className="label fw-700 mt-20">Note:</p>
+                <p className="label dark-gray mt-10">Members 70mm and 90mm thick may be 
                 substitutedwith built-up members sized and nailed in accordance with 2.4.4.7</p>
 
             </CardSmallalt>

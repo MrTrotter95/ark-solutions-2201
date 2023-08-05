@@ -57,7 +57,7 @@ const LumberLok = () => {
 
     const [lDOptions, setLDOptions] = useState(mainLDOptArr);
     const [lDValues, setLDValues] = useState(LDValuesArr);
-    const [lumberlokFixingType, setLumberlokFixingType] = useState(0);
+    const [lumberlokFixingType, setLumberlokFixingType] = useState("E");
     
 
     const lumberlokArr = [
@@ -314,11 +314,11 @@ const LumberLok = () => {
 
     return(
         <div>
-            <h4 className="h5 dt-blue pl-10 fw-800">Lumberlok Lintel Fixings</h4>
+            <h4 className="h5 blue pl-10 fw-700">Lumberlok Lintel Fixings</h4>
             <CardSmallalt>
                 <div onChange={lumberlokHandler}>
                     <div className="flex-row  mb-20">
-                        <p className="body dt-gray">Wind Zone</p>
+                        <p className="body dark-gray">Wind Zone</p>
                         <select className="select-sm label" id="lLWindZone">
                             <option value="l">Low</option>
                             <option value="m">Medium</option>
@@ -328,14 +328,14 @@ const LumberLok = () => {
                         </select>
                     </div>
                     <div className="flex-row  mb-20">
-                        <p className="body dt-gray">Roof Weight</p>
+                        <p className="body dark-gray">Roof Weight</p>
                         <select className="select-sm label" id="lLRoofWeight">
                             <option value="light">Light</option>
                             <option value="heavy">Heavy</option>
                         </select>
                     </div>
                     <div className="flex-row  mb-20">
-                        <p className="body dt-gray">Max Lintel Span</p>
+                        <p className="body dark-gray">Max Lintel Span</p>
                         <select className="select-sm label" id="lLLintelSpan">
                             <option value="1">1.0m</option>
                             <option value="1.2">1.2m</option>
@@ -352,7 +352,7 @@ const LumberLok = () => {
                         </select>
                     </div>
                     <div className="flex-row  mb-20">
-                        <p className="body dt-gray">Max Loaded Dimension</p>
+                        <p className="body dark-gray">Max Loaded Dimension</p>
                         <select className="select-sm label" id="lLLoadedDimension">
                             {lDOptions.map(props => (
                                 <option value={props.value}>{props.text}</option>
@@ -362,23 +362,24 @@ const LumberLok = () => {
                     </div>
                 </div>
                 <div className="mb-20 mt-30 flex">
-                    <h5 className="h5-0mg dt-white fw-800 mb-10">Fixing Type Required: </h5>
-                    <h5 className="result-text_md dt-blue fw-800 mb-10">{lumberlokFixingType}</h5>
+                    <h5 className="h5-0mg fw-700 mb-10">Fixing Type Required: </h5>
+                    <h5 className="result-text_md blue fw-800 ml-10 mb-10">{lumberlokFixingType}</h5>
                 </div>
-                <p className="label dt-white fw-700 mt-20">Note:</p>
-                <p className="label dt-gray mt-10"><span className="label fw-800">(1)</span> Calculator does NOT include allowance
+                <p className="label fw-700 mt-20">Note:</p>
+                <p className="label dark-gray mt-10"><span className="label fw-800">(1)</span> Fixing types required are Lumberlok specific and NOT 3604:2011 table 2.2 fixing types. </p>
+                <p className="label dark-gray mt-10"><span className="label fw-800">(2)</span> Calculator does NOT include allowance
                 for lintels supporting Girder Trusses. </p>
-                <p className="label dt-gray mt-10"><span className="label fw-800">(2)</span> All fixings are designed for vertical 
+                <p className="label dark-gray mt-10"><span className="label fw-800">(3)</span> All fixings are designed for vertical 
                 loads only. Dead loads include the roof weight and standard ceiling weight of 0.20kPa.</p>
-                <p className="label dt-gray mt-10"><span className="label fw-800">(3)</span> Refer to Table 8.19 NZS 3604:2011 for 
+                <p className="label dark-gray mt-10"><span className="label fw-800">(4)</span> Refer to Table 8.19 NZS 3604:2011 for 
                 nailing schedule to resist horizontal loads. </p>
-                <p className="label dt-gray mt-10"><span className="label fw-800">(4)</span> These fixings assume the correct choice 
+                <p className="label dark-gray mt-10"><span className="label fw-800">(5)</span> These fixings assume the correct choice 
                 of rafter/truss to top plate connections have been made.</p>
-                <p className="label dt-gray mt-10"><span className="label fw-800">(5)</span> All fixings assume bottom plate thickness 
+                <p className="label dark-gray mt-10"><span className="label fw-800">(6)</span> All fixings assume bottom plate thickness 
                 of 45mm maximum. Note: TYLOK options on timber species. </p>
-                <p className="label dt-gray mt-10"><span className="label fw-800">(6)</span> Wall framing arrangements under girder 
+                <p className="label dark-gray mt-10"><span className="label fw-800">(7)</span> Wall framing arrangements under girder 
                 trusses are not covered in this schedule.</p>
-                <p className="label dt-gray mt-10"><span className="label fw-800">(7)</span> All timber selections are as per NZS 3604:2011.</p>
+                <p className="label dark-gray mt-10"><span className="label fw-800">(8)</span> All timber selections are as per NZS 3604:2011.</p>
             </CardSmallalt>
         </div>
     )
